@@ -5,7 +5,7 @@
     border: 1px solid white;
     border-radius: 80px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: clamp(0.8rem, 1.5vw + 0.3rem, 1.8rem);
     padding:16px 52px;
     display: flex;
     align-items: center;

@@ -1,10 +1,10 @@
- section {
+ .section {
      background-size: cover;
      background-position: center;
-     height: 100vh;
+ 
  }
 
- .hero-overlay {
+ .overlay {
      z-index: 1;
      content: "";
      position: absolute;

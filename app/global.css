@@ -33,15 +33,14 @@ body {
     background: linear-gradient(180deg, rgba(5, 36, 54, 1) 0%, rgba(0, 7, 25, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#052436", endColorstr="#000719", GradientType=1);
     min-height: 100vh;
-
 }
 
  
 h1 {
     font-family: 'Norwester', sans-serif;
     font-weight: normal;
-    font-size: clamp(2.2rem, 6.5vw + 0.2rem, 7.5rem);
-    line-height: clamp(2rem, 6.5vw + 0.2rem, 6.6rem);
+    font-size: clamp(2.2rem, 6.5vw + 0.2rem, 7.2rem);
+    line-height: clamp(2rem, 6.5vw + 0.2rem, 7rem);
     margin: 0;
     padding-bottom:2rem;
 }
@@ -54,6 +53,7 @@ h5 {
 
 p {
     font-weight: light;
-    font-size: clamp(0.8rem, 1.5vw + 0.3rem, 2rem);
+    font-size: clamp(0.8rem, 1.5vw + 0.3rem, 1.8rem);
     padding-bottom:2rem;
 }
+ 
