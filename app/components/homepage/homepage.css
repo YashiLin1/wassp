@@ -1,0 +1,20 @@
+ section {
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+ }
+
+ .hero-overlay {
+     z-index: 1;
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background: rgb(0, 0, 0);
+     background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(5, 33, 51, 1) 100%);
+     background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(5, 33, 51, 1) 100%);
+     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(5, 33, 51, 1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#052133", GradientType=1);
+ }
