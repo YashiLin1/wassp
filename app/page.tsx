@@ -1,41 +1,43 @@
+"use client"
 import React from 'react';
 import "./global.css";
-// import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-
-import SectionHero from './components/homepage/SectionHero';
-import SectionWelcome from './components/homepage/SectionWelcome';
-import SectionFishing from './components/homepage/SectionFishing';
-import SectionFeatures from './components/homepage/SectionFeatures';
-import SectionScroll from './components/homepage/SectionScroll';
-import SectionPhotos from './components/homepage/SectionPhotos';
-import SectionTestimonials from './components/homepage/SectionTestimonials';
-import SectionNews from './components/homepage/SectionNews';
+import Hero from './components/home/Hero';
+import Welcome from './components/home/Welcome';
+import Fishing from './components/home/Fishing';
+import Features from './components/home/Features';
+import Scroll from './components/home/Scroll';
+import Testimonials from './components/home/Testimonials';
+import News from './components/home/News';
+import Photos from './components/home/Photos';
 import Footer from "@/app/components/Footer";
+import { ThemeProvider } from '@emotion/react';
+import { theme } from './components/theme';
 
 const Page = () => {
   return (
     <>
-      
-        <SectionHero />
-        <SectionWelcome />
-        <SectionFishing />
-        <SectionFeatures />
-        <SectionScroll />
-        <SectionTestimonials />
-        <SectionNews />
-        <SectionPhotos />
+      <ThemeProvider theme={theme}>
+        <Hero />
+        <Welcome />
+        <Fishing />
+        <Features />
+        <Scroll />
+        <Testimonials />
+        <News />
+        <Photos />
         <Footer />
-      {/* <Parallax pages={2} style={{ top: '0', left: '0' }}>
-        <ParallaxLayer offset={0} >
-          <SectionOne />
-        </ParallaxLayer>
-        <ParallaxLayer offset={350}  >
-          <SectionTwo />
-        </ParallaxLayer>
-      </Parallax> */}
+      </ThemeProvider>
     </>
-
   )
 }
 
+      {/* <Parallax pages={2} style={{ top: '0', left: '0' }}>
+        <ParallaxLayer offset={0} >
+          <One />
+        </ParallaxLayer>
+        <ParallaxLayer offset={350}  >
+          <Two />
+        </ParallaxLayer>
+      </Parallax> */}
+ 
 export default Page

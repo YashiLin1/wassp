@@ -1,12 +1,13 @@
-.button {
+.navbtn {
     font-family: "neue-haas-grotesk-display", sans-serif;
     color:white;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 80px;
     cursor: pointer;
-    font-size: clamp(0.8rem, 1.5vw + 0.3rem, 1.8rem);
-    padding:16px 52px;
+    white-space: nowrap;
+    font-size:24px;
+    padding:14px 52px;
     display: flex;
     align-items: center;
     justify-content: center;

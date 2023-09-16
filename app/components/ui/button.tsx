@@ -8,7 +8,7 @@ interface NavBtnProps {
 
 const NavBtn: React.FC<NavBtnProps> = ({ text }) => {
   return (
-    <button className={styles.button}>
+    <button className={styles.navbtn}>
         {text}
         <Image src="/ArrowRight.svg" height={50} width={50} alt="Arrow Right"/>
     </button>

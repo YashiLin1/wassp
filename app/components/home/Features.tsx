@@ -1,11 +1,11 @@
 import React from 'react'
 
-const SectionTwo = () => {
+const Features = () => {
   return (
     <section>
-      Section two
+      Section 3
     </section>
   )
 }
 
-export default SectionTwo
+export default Features
