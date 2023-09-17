@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
-import Tag from '../ui/Tab';
+import Tabs from './TabsSection';
 
 const Features = () => {
-  const tags = [
+  const tabs = [
     {
       number: '01',
       title: 'High Resolution Chirp Sounder',
@@ -46,9 +46,9 @@ const Features = () => {
     }
   ];
 
-  let [selectedTag, setSelectedTag] = useState<Tag | null>(tags[0] || null);
-  const handleTagClick = (tag: Tag) => {
-    setSelectedTag(tag);
+  let [selectedTab, setSelectedTab] = useState<Tabs | null>(tabs[0] || null);
+  const handleTabClick = (tab: Tabs) => {
+    setSelectedTab(tab);
   };
 
   return (
@@ -94,19 +94,19 @@ const Features = () => {
             md:'inherit',
           }
         }}>
-          <Tag tags={tags} onTagClick={handleTagClick} selectedTag={selectedTag} />
+          <Tabs Tabs={tabs} onTabClick={handleTabClick} selectedTab={selectedTab} />
         </Grid>
         <Grid item xs={0} md={4}></Grid>
         <Grid item xs={12} md={6}>
-          {selectedTag && (
+          {selectedTab && (
             <>
               <Typography variant="subtitle2" sx={{ mb: 3 }}>
-                {selectedTag.number}
+                {selectedTab.number}
               </Typography>
               <Typography variant="subtitle1" sx={{ mb: 2 }}>
-                {selectedTag.title}
+                {selectedTab.title}
               </Typography>
-              <Typography variant="body1">{selectedTag.paragraph}</Typography>
+              <Typography variant="body1">{selectedTab.paragraph}</Typography>
             </>
           )}
         </Grid>
