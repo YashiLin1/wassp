@@ -28,7 +28,8 @@ export const theme = createTheme({
     h4:{
       fontFamily: 'Norwester, sans-serif',
       fontWeight: 'normal',
-      fontSize: 'clamp(1rem, 0.8vw + 0.7rem, 2rem)',
+      fontSize: 'clamp(1.8rem, 2.9vw + 1.7rem, 6.8rem)',
+      lineHeight: 'clamp(1.8rem, 2.9vw + 1.7rem, 6.8rem)',
     },
     h5: {
       fontFamily: 'Norwester, sans-serif',

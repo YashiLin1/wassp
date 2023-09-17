@@ -35,7 +35,12 @@ const Hero = () => {
             }
           }}>
           <Grid item xs={12} md={9} lg={6} >
-            <Typography variant="h4">SEA IT ALL</Typography>
+            <Typography variant="h4" sx={{
+              fontSize: 'clamp(1rem, 0.8vw + 0.7rem, 2rem)',
+              lineHeight:'clamp(1.2rem, 0.8vw + 1.3rem, 2.3rem)',
+            }}>
+              SEA IT ALL
+              </Typography>
             <Typography variant="h1" sx={{
             }}>
               MULTIBEAM SONAR PRODUCTS & SOLUTIONS.
