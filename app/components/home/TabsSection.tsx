@@ -9,15 +9,15 @@ interface Tabs {
 }
 
 interface TabsProps {
-  Tabs: Tabs[];
+  TabsContent: Tabs[];
   onTabClick: (Tab: Tabs) => void;
   selectedTab: Tabs | null;
 }
 
-const Tabs: React.FC<TabsProps> = ({ Tabs, onTabClick, selectedTab }) => {
+const Tabs: React.FC<TabsProps> = ({ TabsContent, onTabClick, selectedTab }) => {
   return (
     <div>
-      {Tabs.map((Tab) => (
+      {TabsContent.map((Tab) => (
         <Button
           key={Tab.number}
           className={`${styles.TabBtn} ${

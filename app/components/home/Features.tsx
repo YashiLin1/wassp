@@ -94,7 +94,7 @@ const Features = () => {
             md:'inherit',
           }
         }}>
-          <Tabs Tabs={tabs} onTabClick={handleTabClick} selectedTab={selectedTab} />
+          <Tabs TabsContent={tabs} onTabClick={handleTabClick} selectedTab={selectedTab} />
         </Grid>
         <Grid item xs={0} md={4}></Grid>
         <Grid item xs={12} md={6}>
