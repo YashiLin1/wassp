@@ -5,7 +5,7 @@
     display: inline;
 }
 
-.LinkBtn>* {
+.LinkBtn>*, .LinkBtnB>* {
     display: inline;
 }
 
@@ -26,3 +26,31 @@
     visibility: hidden;
     width: 0;
 }
+
+.LinkBtnB {
+    color: white;
+    position: relative;
+    text-decoration: none;
+  
+}
+ 
+
+.LinkBtnB:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform-origin: center;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.LinkBtnB:hover:after {
+    visibility: visible;
+    width: 100%;
+}
+
+ 

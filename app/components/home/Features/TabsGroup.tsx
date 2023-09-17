@@ -27,8 +27,9 @@ const TabsGroup: React.FC<TabsProps> = ({ TabsNames, onTabClick, selectedTab }) 
       },
       overflowY: {
         xs: 'hidden',
-        md: 'inherit'
+       lg: 'inherit'
       },
+ 
       scrollbarWidth:'none'
     }}>
       <div  >

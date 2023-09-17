@@ -34,7 +34,7 @@ export const theme = createTheme({
       fontSize: 'clamp(3.2rem, 6vw + 0.9rem, 10rem)',
       lineHeight: 'clamp(3.2rem, 6vw + 0.9rem, 10rem)',
     },
-    h4:{
+    h4: {
       ...Norwester,
       fontSize: 'clamp(1.8rem, 2.9vw + 1.7rem, 6.8rem)',
       lineHeight: 'clamp(1.8rem, 2.9vw + 1.7rem, 6.8rem)',
@@ -49,22 +49,37 @@ export const theme = createTheme({
     },
     body1: {
       ...Neue,
-      fontSize: 'clamp(0.8rem, 0.3vw + 0.7rem, 1.2rem)',
+      [typoTheme.breakpoints.up('xs')]: {
+        fontSize: '14px',
+
+      },
+      [typoTheme.breakpoints.up('md')]: {
+        fontSize: '16px',
+
+      },
     },
     body2: {
       ...Neue,
-      fontSize: '0.8rem',
-      textTransform: 'none',
+      [typoTheme.breakpoints.up('xs')]: {
+        fontSize: '16px',
+
+      },
+      [typoTheme.breakpoints.up('md')]: {
+        fontSize: '16px',
+
+      },
+      textTransform: 'none'
     },
     subtitle1: {
       ...Neue,
       [typoTheme.breakpoints.up('xs')]: {
         fontSize: '30px',
+        lineHeight: '36px'
       },
       [typoTheme.breakpoints.up('md')]: {
         fontSize: '60px',
+        lineHeight: '66px'
       },
-      lineHeight: 'clamp(3rem, 2.9vw + 1.7rem, 6.8rem)',
     },
     subtitle2: {
       ...Neue,

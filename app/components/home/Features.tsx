@@ -56,26 +56,29 @@ const Features = () => {
     <Box
       sx={{
         flexGrow: 1,
-        height: '100vh',
-        pt:{
-          xs:10,
-          md:12,
-          lg:15,
+        my: {
+          xs: 15,
+          md: 30,
         },
-
+        minHeight: {
+          xs: '30vh',
+          md: '60vh',
+        }
       }}
     >
       <Grid container>
-        <Grid item xs={2} md={1} sx={{
-          pb: {
-            xs: 4,
-          },
-          px: {
-            xs: 2,
-            md: 4,
-  
-          },
-        }}>
+        <Grid item
+          xs={2}
+          md={1}
+          sx={{
+            pb: {
+              xs: 4,
+            },
+            px: {
+              xs: 2,
+              md: 4,
+            },
+          }}>
           <Typography variant="h6">
             03
           </Typography>
@@ -85,34 +88,33 @@ const Features = () => {
             FEATURES
           </Typography>
         </Grid>
-        <Grid item xs={12} md={8} 
-        sx={{ mb: 2.2,
-          pl: {
-            xs: 2,
-            md: 4,
-  
-          },
-          overflowX:{
-            xs:'scroll',
-            md:'inherit'
-          },
-          height:{
-            xs:50,
-            md:'inherit',
-          }
-        }}>
+        <Grid item xs={12} md={8}
+          sx={{
+            mb: 2.2,
+            pl: {
+              xs: 2,
+              md: 4,
+            },
+            overflowX: {
+              xs: 'scroll',
+              md: 'inherit'
+            },
+            height: {
+              xs: 50,
+              md: 'inherit',
+            }
+          }}>
           <TabsGroup TabsNames={tabs} onTabClick={handleTabClick} selectedTab={selectedTab} />
         </Grid>
         <Grid item xs={0} md={4}></Grid>
-        <Grid item xs={12} md={6} 
-        sx={{
-          px: {
-            xs: 2,
-            md: 4,
-  
-          },
-        }}>
-          <TabsContent selectedTab={selectedTab} /> 
+        <Grid item xs={12} md={6}
+          sx={{
+            px: {
+              xs: 2,
+              md: 4,
+            },
+          }}>
+          <TabsContent selectedTab={selectedTab} />
         </Grid>
       </Grid>
     </Box>

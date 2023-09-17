@@ -6,12 +6,12 @@ interface LinkBtnProps {
     text: string;
 }
 
-const LinkBtn: React.FC<LinkBtnProps> = ({ text }) => {
+const LinkBtnB: React.FC<LinkBtnProps> = ({ text }) => {
     return (
-        <Link href="#"  className={styles.LinkBtn}>
-            <Typography variant="body2">{text}</Typography>
+        <Link href="#" className={styles.LinkBtnB}>
+            <Typography variant="body1">{text}</Typography>
         </Link>
     )
 }
 
-export default LinkBtn;
+export default LinkBtnB;

@@ -23,7 +23,7 @@ const Welcome = () => {
           <Grid container sx={{
             pb: {
               xs: 2,
-              lg: 5,
+              lg: 4,
             }
           }}>
             <Grid item md={0} lg={4}></Grid>

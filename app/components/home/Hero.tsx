@@ -13,7 +13,6 @@ const Hero = () => {
         px: {
           xs: 2,
           md: 4,
-
         }
       }}>
       <div className={styles.overlayHero}></div>

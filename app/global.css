@@ -43,7 +43,7 @@ a {
     text-decoration: none
 }
 
-/* .MuiDialog-root::-webkit-scrollbar {
+:root::-webkit-scrollbar {
     display: none;
-} */
+} 
 /* doesn't work */

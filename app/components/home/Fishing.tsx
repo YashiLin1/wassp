@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Grid, Typography, LinearProgress } from '@mui/material';
 import styles from './home.module.css';
-import LinkBtn from '../ui/LinkBtn';
+import LinkBtn from '../ui/LinkBtnA';
 
 
 const Fishing = () => {
