@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
-import Tabs from './TabsSection';
+import TabsSection from './TabsSection';
 
 const Features = () => {
   const tabs = [
@@ -46,8 +46,8 @@ const Features = () => {
     }
   ];
 
-  let [selectedTab, setSelectedTab] = useState<Tabs | null>(tabs[0] || null);
-  const handleTabClick = (tab: Tabs) => {
+  let [selectedTab, setSelectedTab] = useState<TabsSection | null>(tabs[0] || null);
+  const handleTabClick = (tab: TabsSection) => {
     setSelectedTab(tab);
   };
 
@@ -94,7 +94,7 @@ const Features = () => {
             md:'inherit',
           }
         }}>
-          <Tabs TabsContent={tabs} onTabClick={handleTabClick} selectedTab={selectedTab} />
+          <TabsSection TabsContent={tabs} onTabClick={handleTabClick} selectedTab={selectedTab} />
         </Grid>
         <Grid item xs={0} md={4}></Grid>
         <Grid item xs={12} md={6}>
