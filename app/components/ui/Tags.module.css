@@ -1,0 +1,9 @@
+.tags{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 80px;
+}
+
+.tags:hover{
+    background-color:rgba(255, 255, 255, 0.08);
+}

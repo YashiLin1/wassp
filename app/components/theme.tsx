@@ -10,33 +10,57 @@ export const theme = createTheme({
     h1: {
       fontFamily: 'Norwester, sans-serif',
       fontWeight: 'normal',
-      fontSize: 'clamp(3rem, 6.5vw + 0.2rem, 7.2rem)',
-      lineHeight: 'clamp(2.8rem, 6.5vw + 0.2rem, 7rem)',
-      margin: '0',
+      fontSize: 'clamp(3rem, 2.9vw + 1.7rem, 6.8rem)',
+      lineHeight: 'clamp(3rem, 2.9vw + 1.7rem, 6.8rem)',
+    },
+    h2: {
+      fontFamily: 'Norwester, sans-serif',
+      fontWeight: 'normal',
+      fontSize: 'clamp(2rem, 3.7vw + 0.4rem, 6.8rem)',
+      lineHeight: 'clamp(2rem, 3.7vw + 0.4rem, 6.8rem)',
+    },
+    h3: {
+      fontFamily: 'Norwester, sans-serif',
+      fontWeight: 'normal',
+      fontSize: 'clamp(3.2rem, 6vw + 0.9rem, 10rem)',
+      lineHeight: 'clamp(3.2rem, 6vw + 0.9rem, 10rem)',
     },
     h4:{
       fontFamily: 'Norwester, sans-serif',
       fontWeight: 'normal',
-      fontSize: 'clamp(1rem, 1.5vw + 0.5rem, 3rem)',
-      margin: '0',
+      fontSize: 'clamp(1rem, 0.8vw + 0.7rem, 2rem)',
     },
     h5: {
       fontFamily: 'Norwester, sans-serif',
       fontWeight: 'normal',
-      fontSize: 'clamp(1rem, 1.5vw + 0.5rem, 2rem)',
-      margin: '0',
+      fontSize: '1rem',
     },
     h6: {
       fontFamily: 'Norwester, sans-serif',
       fontWeight: 'normal',
-      fontSize: 'clamp(1.5rem, 0.7vw + 1.3rem, 1.75rem)',
-      margin: '0',
+      fontSize: '0.8rem',
     },
     body1:{
       fontFamily: 'neue-haas-grotesk-display, sans-serif',
-      fontWeight: 'light',
-      fontSize: 'clamp(1.3rem, 0.7vw + 1rem, 1.75rem)',
-      lineHeight:'clamp(1.4rem, 0.7vw + 1rem, 2rem)',
+      fontWeight: '100',
+      fontSize: 'clamp(0.8rem, 0.3vw + 0.7rem, 1.2rem)',
+    },
+    body2:{
+      fontFamily: 'neue-haas-grotesk-display, sans-serif',
+      fontWeight: '100',
+      fontSize: '0.8rem',
+      textTransform:'none',
+    },
+    subtitle1: {
+      fontFamily: 'neue-haas-grotesk-display, sans-serif',
+      fontWeight: 'normal',
+      fontSize: 'clamp(3rem, 2.9vw + 1.7rem, 6.2rem)',
+      lineHeight: 'clamp(3rem, 2.9vw + 1.7rem, 6.8rem)',
+    },
+    subtitle2:{
+      fontFamily: 'neue-haas-grotesk-display, sans-serif',
+      fontWeight: 'normal',
+      fontSize: '1.4rem',
     }
   }
 });
