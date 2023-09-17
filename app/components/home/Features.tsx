@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
-import TabsGroup from './TabsGroup';
-import TabsContent from './TabsContent';
+import TabsGroup from './Features/TabsGroup';
+import TabsContent from './Features/TabsContent';
 
 const Features = () => {
-
   const tabs = [
     {
       number: '01',
@@ -63,17 +62,18 @@ const Features = () => {
           md:12,
           lg:15,
         },
-        px: {
-          xs: 2,
-          md: 4,
 
-        },
       }}
     >
       <Grid container>
         <Grid item xs={2} md={1} sx={{
           pb: {
             xs: 4,
+          },
+          px: {
+            xs: 2,
+            md: 4,
+  
           },
         }}>
           <Typography variant="h6">
@@ -87,19 +87,31 @@ const Features = () => {
         </Grid>
         <Grid item xs={12} md={8} 
         sx={{ mb: 2.2,
+          pl: {
+            xs: 2,
+            md: 4,
+  
+          },
           overflowX:{
             xs:'scroll',
             md:'inherit'
           },
           height:{
-            xs:45,
+            xs:50,
             md:'inherit',
           }
         }}>
           <TabsGroup TabsNames={tabs} onTabClick={handleTabClick} selectedTab={selectedTab} />
         </Grid>
         <Grid item xs={0} md={4}></Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} 
+        sx={{
+          px: {
+            xs: 2,
+            md: 4,
+  
+          },
+        }}>
           <TabsContent selectedTab={selectedTab} /> 
         </Grid>
       </Grid>
