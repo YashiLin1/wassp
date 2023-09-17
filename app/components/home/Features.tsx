@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
-import TabsSection from './TabsSection';
+import TabsGroup from './TabsGroup';
+import TabsContent from './TabsContent';
 
 const Features = () => {
+
   const tabs = [
     {
       number: '01',
@@ -46,8 +48,8 @@ const Features = () => {
     }
   ];
 
-  let [selectedTab, setSelectedTab] = useState<TabsSection | null>(tabs[0] || null);
-  const handleTabClick = (tab: TabsSection) => {
+  let [selectedTab, setSelectedTab] = useState<TabsGroup | null>(tabs[0] || null);
+  const handleTabClick = (tab: TabsGroup) => {
     setSelectedTab(tab);
   };
 
@@ -94,21 +96,11 @@ const Features = () => {
             md:'inherit',
           }
         }}>
-          <TabsSection TabsContent={tabs} onTabClick={handleTabClick} selectedTab={selectedTab} />
+          <TabsGroup TabsNames={tabs} onTabClick={handleTabClick} selectedTab={selectedTab} />
         </Grid>
         <Grid item xs={0} md={4}></Grid>
         <Grid item xs={12} md={6}>
-          {selectedTab && (
-            <>
-              <Typography variant="subtitle2" sx={{ mb: 3 }}>
-                {selectedTab.number}
-              </Typography>
-              <Typography variant="subtitle1" sx={{ mb: 2 }}>
-                {selectedTab.title}
-              </Typography>
-              <Typography variant="body1">{selectedTab.paragraph}</Typography>
-            </>
-          )}
+          <TabsContent selectedTab={selectedTab} /> 
         </Grid>
       </Grid>
     </Box>

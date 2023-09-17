@@ -2,22 +2,22 @@ import React from 'react';
 import { Button, Typography } from '@mui/material';
 import styles from '../ui/TabBtn.module.css';
 
-interface TabsSection {
+interface TabsGroup {
   number: string;
   title: string;
   paragraph: string;
 }
 
 interface TabsProps {
-  TabsContent: TabsSection[];
-  onTabClick: (Tab: TabsSection) => void;
-  selectedTab: TabsSection | null;
+  TabsNames: TabsGroup[];
+  onTabClick: (Tab: TabsGroup) => void;
+  selectedTab: TabsGroup | null;
 }
 
-const TabsSection: React.FC<TabsProps> = ({ TabsContent, onTabClick, selectedTab }) => {
+const TabsGroup: React.FC<TabsProps> = ({ TabsNames, onTabClick, selectedTab }) => {
   return (
     <div>
-      {TabsContent.map((Tab) => (
+      {TabsNames.map((Tab) => (
         <Button
           key={Tab.number}
           className={`${styles.TabBtn} ${
@@ -41,4 +41,4 @@ const TabsSection: React.FC<TabsProps> = ({ TabsContent, onTabClick, selectedTab
   );
 };
 
-export default TabsSection;
+export default TabsGroup;
