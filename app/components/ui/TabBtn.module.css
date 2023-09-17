@@ -1,15 +1,15 @@
-.tab{
+.TabBtn{
  
     border: 1px solid white;
     border-radius: 80px;
 }
 
-.tab.selected{
+.TabBtn.selected{
     background-color: white !important;
     color:#03182A;
 }
 
-.tab:hover{
+.TabBtn:hover{
     background-color:rgba(255, 255, 255, 0.08);
 }
 

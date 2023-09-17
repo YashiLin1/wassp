@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Typography } from '@mui/material';
-import styles from '../ui/Tab.module.css';
+import styles from '../ui/TabBtn.module.css';
 
 interface Tabs {
   number: string;
@@ -20,7 +20,7 @@ const Tabs: React.FC<TabsProps> = ({ Tabs, onTabClick, selectedTab }) => {
       {Tabs.map((Tab) => (
         <Button
           key={Tab.number}
-          className={`${styles.tab} ${
+          className={`${styles.TabBtn} ${
             selectedTab && selectedTab.number === Tab.number ? styles.selected : ''
           }`}
           sx={{
