@@ -9,17 +9,20 @@ const Footer = () => {
   const linkText = "Subscribe to our newsletter";
   return (
     <Box sx={{
+
       px: {
         xs: 2,
         md: 6,
       },
+      pt: {
+        xs: 7.5,
+        md: 15
+      }
     }}>
       <Grid container>
 
         <Grid item xs={11} md={3}
-          sx={{
-            mb: '60px'
-          }}>
+           >
           <Typography variant='body1'
             sx={{
               mb: '56px',
@@ -103,17 +106,13 @@ const Footer = () => {
         </Grid>
       </Grid>
       <Box sx={{
-        pt:{
-          xs:'60px',
-          lg:'124px'
+        py:{
+          xs:3.5,
+          md:7.5,
         },
-        pb:{
-          xs:'30px',
-          lg:'62px'
-        },
-        opacity:'0.04'
+        opacity: '0.04'
       }}>
-        <img src="WasspMultibeam.svg" style={{width:'100%' }} alt="WasspMultibeam" />
+        <img src="WasspMultibeam.svg" style={{ width: '100%' }} alt="WasspMultibeam" />
       </Box>
     </Box>
   )

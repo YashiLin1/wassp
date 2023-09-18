@@ -6,10 +6,6 @@ const photoUrls = ['05.jpg', '06.jpg', '07.jpg', '08.jpg', '09.jpg', '10.jpg', '
 const Photos = () => {
   return (
     <Box sx={{
-      my: {
-        xs: 15,
-        md: 30,
-      },
       whiteSpace: 'nowrap',
       overflow: 'hidden',
       position:'relative'

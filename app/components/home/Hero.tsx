@@ -53,9 +53,7 @@ const Hero = () => {
                   lg: 7,
                 }
               }}>
-
               <Grid item md={0} lg={4} xl={4}></Grid>
-
               <Grid item xs={8} md={7} lg={2} xl={2}
                 sx={{
                   pb: {
@@ -68,9 +66,7 @@ const Hero = () => {
                   WASSP multi-beam enables sustainable fishing, exploration, and surveys with versatility and detail.
                 </Typography>
               </Grid>
-
               <Grid item xs={0} md={0} lg={4}></Grid>
-
               <Grid item xs={12} lg={2} sx={{
                 justifyItems: "end"
               }}>
@@ -78,7 +74,6 @@ const Hero = () => {
               </Grid>
             </Grid>
           </Grid>
-
     </Box>
   )
 }

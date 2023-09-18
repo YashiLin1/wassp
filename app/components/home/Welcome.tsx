@@ -10,21 +10,17 @@ const Welcome = () => {
       <Box
         sx={{
           flexGrow: 1,
-          height:'100vh',
+          height:'90vh',
           display: 'flex',
           alignItems: 'center',
           px: {
             md: 6,
             xs: 2
           },
-          // pt:{
-          //   xs:15,
-          //   md:30,
-          // },
-          // pb:{
-          //   xs:5,
-          //   md:15,
-          // }
+          py:{
+            xs:7.5,
+            md:15
+          },
         }} className={styles.welcome}
       >
         <Box>

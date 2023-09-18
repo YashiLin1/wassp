@@ -38,16 +38,12 @@ const News = () => {
           md: 30,
         },
       }}
-      
+
     >
       <Grid
         container
         sx={{
-          position:'relative',
-          my: {
-            xs: 10,
-            md: 30,
-          },
+          position: 'relative',
         }}
       >
         <Grid item xs={2} md={1} sx={{ pb: 4 }}>
@@ -61,7 +57,7 @@ const News = () => {
             sx={{
               width: '100%',
               overflowY: 'hidden',
-              overflowX:'scroll',
+              overflowX: 'scroll',
               whiteSpace: 'nowrap',
             }}
           >
@@ -73,7 +69,7 @@ const News = () => {
                   mr: '10px',
                   maxWidth: 409,
                   backgroundColor: 'transparent',
-                  border: '0.1rem solid white',
+                  border: '0.1rem solid #ffffff8c',
                 }}
               >
                 <CardMedia

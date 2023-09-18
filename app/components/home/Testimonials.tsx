@@ -16,10 +16,7 @@ const Testimonials = () => {
     }}>
       <Grid container
         sx={{
-          my: {
-            xs: 10,
-            md: 30,
-          },
+ 
         }}
       >
         <Grid item xs={2} md={1} sx={{
