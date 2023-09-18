@@ -10,14 +10,22 @@ const Welcome = () => {
       <Box
         sx={{
           flexGrow: 1,
-          height: '100vh',
+          height:'100vh',
           display: 'flex',
           alignItems: 'center',
           px: {
             md: 6,
             xs: 2
-          }
-        }} className={styles.section}
+          },
+          // pt:{
+          //   xs:15,
+          //   md:30,
+          // },
+          // pb:{
+          //   xs:5,
+          //   md:15,
+          // }
+        }} className={styles.welcome}
       >
         <Box>
           <Grid container sx={{
@@ -50,11 +58,12 @@ const Welcome = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} md={5} lg={3} >
-              <Typography variant="body1" sx={{
-                pb: {
-                  xs: 3.8,
-                }
-              }}>WASSP, a powerful multi-beam sounder with 120-degree coverage and models for deep exploration, offers unparalleled accuracy, detail, and versatility. Target fish with steerable sounders, generate real-time 3D charts, map fish in water, and make better decisions with the user-friendly advanced mode.
+              <Typography variant="body1" sx={{ pb: { xs: 3.8 } }}>
+                  WASSP, a powerful multi-beam sounder with 120-degree coverage and
+                  models for deep exploration, offers unparalleled accuracy, detail,
+                  and versatility. Target fish with steerable sounders, generate
+                  real-time 3D charts, map fish in water, and make better decisions
+                  with the user-friendly advanced mode.
               </Typography>
               <NavBtn text={buttonText} />
             </Grid>

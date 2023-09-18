@@ -27,7 +27,7 @@ const Fishing = () => {
   return (
     <Box sx={{
       flexGrow: 1,
-      backgroundImage: 'url(/02.jpg)',
+ 
       height: '100vh',
       px: {
         xs: 2,
@@ -35,7 +35,7 @@ const Fishing = () => {
       },
 
     }} className={styles.section} >
-      <div className={styles.overlayFishing}></div>
+      {/* <div className={styles.overlayFishing}></div> */}
       <Grid container
         justifyContent="space-between"
         sx={{

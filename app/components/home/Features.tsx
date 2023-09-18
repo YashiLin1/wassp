@@ -56,14 +56,14 @@ const Features = () => {
     <Box
       sx={{
         flexGrow: 1,
+        height:'100vh',
+        display: 'flex',
+        alignItems: 'center',
         my: {
           xs: 15,
           md: 30,
         },
-        minHeight: {
-          xs: '30vh',
-          md: '60vh',
-        }
+ 
       }}
     >
       <Grid container>

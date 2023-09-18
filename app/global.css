@@ -40,7 +40,9 @@ html {
     background: -webkit-linear-gradient(180deg, rgba(5, 36, 54, 1) 0%, rgba(0, 7, 25, 1) 100%);
     background: linear-gradient(180deg, rgba(5, 36, 54, 1) 0%, rgba(0, 7, 25, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#052436", endColorstr="#000719", GradientType=1);
-
+ 
+    height:100%;
+ 
 }
 
 a {
