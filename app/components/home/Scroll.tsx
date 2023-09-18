@@ -37,7 +37,8 @@ const Scroll = () => {
             spacing={4}
             sx={{
               whiteSpace: 'nowrap',
-              mr: 4
+              mr: 4,
+              overFlow:'hidden',
             }}
           >
             {items.map((item, index) => (

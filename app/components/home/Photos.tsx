@@ -25,13 +25,11 @@ const Photos = () => {
             width: {
               xs: 100,
               md: 121,
- 
               xl: 220,
             },
             height: {
               xs: 100,
               md: 111,
- 
               xl: 210,
             }
           }}

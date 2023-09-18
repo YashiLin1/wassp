@@ -1,22 +1,24 @@
 "use client"
 import React from 'react';
 import "./global.css";
-import Hero from './components/home/Hero';
-import Welcome from './components/home/Welcome';
-import Fishing from './components/home/Fishing';
-import Features from './components/home/Features';
-import Scroll from './components/home/Scroll';
-import Testimonials from './components/home/Testimonials';
-import News from './components/home/News';
-import Photos from './components/home/Photos';
+import Navbar from "@/app/components/Navbar";
+import Hero from '@/app/components/home/Hero';
+import Welcome from '@/app/components/home/Welcome';
+import Fishing from '@/app/components/home/Fishing';
+import Features from '@/app/components/home/Features';
+import Scroll from '@/app/components/home/Scroll';
+import Testimonials from '@/app/components/home/Testimonials';
+import News from '@/app/components/home/News';
+import Photos from '@/app/components/home/Photos';
 import Footer from "@/app/components/Footer";
 import { ThemeProvider } from '@emotion/react';
-import { theme } from './components/theme';
+import { theme } from '@/app/components/theme';
 
 const Page = () => {
   return (
     <>
       <ThemeProvider theme={theme}>
+      <Navbar />
         <Hero />
         <Welcome />
         <Fishing />

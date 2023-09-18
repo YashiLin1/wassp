@@ -17,6 +17,11 @@
 * {
     padding: 0;
     margin: 0;
+    -ms-overflow-style: none;
+}
+ 
+::-webkit-scrollbar {
+    display: none;
 }
 
 :root {
@@ -43,7 +48,4 @@ a {
     text-decoration: none
 }
 
-:root::-webkit-scrollbar {
-    display: none;
-} 
-/* doesn't work */
+ 

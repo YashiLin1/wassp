@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from "@/app/components/Navbar";
-import "./global.css";
+
+import "@/app/global.css";
 
 export const metadata = {
   title: 'WASSP',
@@ -16,7 +16,7 @@ export default function Layout({
     <html lang={'en'}>
       <body>
       
-          {/* <Navbar /> */}
+         
           <main>{children}</main>
  
       </body>
