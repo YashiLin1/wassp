@@ -1,3 +1,5 @@
+// The only difference between LinkBtnA and LinkBtnB is the hover animation
+
 import React from 'react';
 import { Link, Typography } from '@mui/material';
 import styles from './LinkBtn.module.css';

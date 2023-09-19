@@ -1,3 +1,5 @@
+//Section of news
+
 import React from 'react';
 import Image from 'next/image';
 import { Box, Grid, Typography, Card, CardMedia, CardContent, Button } from '@mui/material';
@@ -80,7 +82,7 @@ const News = () => {
                     position: 'relative',
                   }}
                   image={newsItem.image}
-                  className={styles.overlayImage}
+                  className={styles.photosOverlay}
                 />
                 <CardContent>
                   <Typography

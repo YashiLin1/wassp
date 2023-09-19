@@ -1,3 +1,5 @@
+//Second section of homepage
+
 import React from 'react'
 import { Box, Grid, Typography } from '@mui/material';
 import NavBtn from '../ui/NavBtn';
@@ -21,7 +23,7 @@ const Welcome = () => {
             xs:30,
  
           },
-        }} className={styles.welcome}
+        }} className={styles.welcomeBackground}
       >
         <Box>
           <Grid container sx={{

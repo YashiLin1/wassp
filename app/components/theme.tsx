@@ -12,6 +12,7 @@ const Neue = {
   fontWeight: '100',
 };
 
+
 const typoTheme = createTheme();
 
 export const theme = createTheme({
@@ -50,7 +51,6 @@ export const theme = createTheme({
         fontSize: '90px',
         lineHeight: '90px'
       },
-      lineHeight: 'clamp(2rem, 3.7vw + 0.4rem, 6.8rem)',
     },
     h3: {
       ...Norwester,
@@ -59,16 +59,42 @@ export const theme = createTheme({
     },
     h4: {
       ...Norwester,
-      fontSize: 'clamp(1.8rem, 2.9vw + 1.7rem, 6.8rem)',
-      lineHeight: 'clamp(1.8rem, 2.9vw + 1.7rem, 6.8rem)',
+      [typoTheme.breakpoints.up('xs')]: {
+        fontSize: '24px',
+        lineHeight: '24px'
+      },
+      [typoTheme.breakpoints.up('md')]: {
+        fontSize: '60px',
+        lineHeight: '60px'
+      },
+      [typoTheme.breakpoints.up('xl')]: {
+        fontSize: '72px',
+        lineHeight: '72px'
+      },
     },
     h5: {
       ...Norwester,
-      fontSize: '1rem',
+      [typoTheme.breakpoints.up('xs')]: {
+        fontSize: '12px',
+      },
+      [typoTheme.breakpoints.up('md')]: {
+        fontSize: '14px',
+      },
+      [typoTheme.breakpoints.up('xl')]: {
+        fontSize: '16px',
+      },
     },
     h6: {
       ...Norwester,
-      fontSize: '0.8rem',
+      [typoTheme.breakpoints.up('xs')]: {
+        fontSize: '12px',
+      },
+      [typoTheme.breakpoints.up('md')]: {
+        fontSize: '12px',
+      },
+      [typoTheme.breakpoints.up('xl')]: {
+        fontSize: '14px',
+      },
     },
     body1: {
       ...Neue,
@@ -103,7 +129,7 @@ export const theme = createTheme({
       },
       [typoTheme.breakpoints.up('md')]: {
         fontSize: '60px',
-        lineHeight: '66px'
+        lineHeight: '64px'
       },
       [typoTheme.breakpoints.up('xl')]: {
         fontSize: '72px',

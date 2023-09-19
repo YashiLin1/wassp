@@ -1,3 +1,5 @@
+//Section of photos lining up
+
 import React from 'react';
 import { Box, Card, CardMedia } from '@mui/material';
 import styles from './home.module.css';
@@ -42,7 +44,7 @@ const Photos = () => {
             }}
             image={photoUrl}
             title={`Photo ${index + 1}`}
-            className={styles.overlayImage}
+            className={styles.photosOverlay}
           />
         </Card>
       ))}

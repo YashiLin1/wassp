@@ -9,7 +9,6 @@ const Footer = () => {
   const linkText = "Subscribe to our newsletter";
   return (
     <Box sx={{
-
       px: {
         xs: 2,
         md: 6,
@@ -20,9 +19,7 @@ const Footer = () => {
       }
     }}>
       <Grid container>
-
-        <Grid item xs={11} md={3}
-        >
+        <Grid item xs={11} md={3}>
           <Typography variant='body1'
             sx={{
               mb: '56px',

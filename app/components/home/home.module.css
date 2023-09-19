@@ -5,16 +5,15 @@
      position: relative;
  }
 
- .welcome {
-     background: rgb(5, 33, 51);
-     background: -moz-linear-gradient(180deg, rgba(5, 33, 51, 0) 0%, rgba(5, 32, 50, 1) 7%, rgba(4, 29, 47, 1) 100%);
-     background: -webkit-linear-gradient(180deg, rgba(5, 33, 51, 0) 0%, rgba(5, 32, 50, 1) 7%, rgba(4, 29, 47, 1) 100%);
-     background: linear-gradient(180deg, rgba(5, 33, 51, 0) 0%, rgba(5, 32, 50, 1) 7%, rgba(4, 29, 47, 1) 100%);
-     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#052133", endColorstr="#041d2f", GradientType=1);
-
+ .welcomeBackground{
+    background: rgb(5,33,51);
+    background: -moz-linear-gradient(180deg, rgba(5,33,51,0) 0%, rgba(5,33,51,1) 15%, rgba(4,30,49,1) 81%, rgba(4,29,48,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(5,33,51,0) 0%, rgba(5,33,51,1) 15%, rgba(4,30,49,1) 81%, rgba(4,29,48,0) 100%);
+    background: linear-gradient(180deg, rgba(5,33,51,0) 0%, rgba(5,33,51,1) 15%, rgba(4,30,49,1) 81%, rgba(4,29,48,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#052133",endColorstr="#041d30",GradientType=1);
  }
 
- .overlayHero {
+ .heroBackground {
      background-image: url(/01.jpg);
      background-size: cover;
      background-position: center;
@@ -24,24 +23,11 @@
      right: 0;
      bottom: 0;
      left: 0;
+     -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+     mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+ 
  }
-
- .overlayHero:before {
-     z-index: 1;
-     content: "";
-     position: absolute;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     background: rgb(0, 0, 0);
-     background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(5, 33, 51, 1) 100%);
-     background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(5, 33, 51, 1) 100%);
-     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(5, 33, 51, 1) 100%);
-     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#052133", GradientType=1);
- }
-
-
+ 
  .fishingBackground {
      background-image: url(/02.jpg);
      background-size: cover;
@@ -52,21 +38,8 @@
      right: 0;
      bottom: 0;
      left: 0;
- }
-
- .fishingBackground:before {
-     z-index: 1;
-     content: "";
-     position: absolute;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     background: rgb(4, 29, 47);
-     background: -moz-linear-gradient(180deg, rgba(4, 29, 47, 1) 0%, rgba(4, 29, 47, 0) 25%, rgba(4, 25, 43, 0) 75%, rgba(4, 25, 43, 1) 100%);
-     background: -webkit-linear-gradient(180deg, rgba(4, 29, 47, 1) 0%, rgba(4, 29, 47, 0) 25%, rgba(4, 25, 43, 0) 75%, rgba(4, 25, 43, 1) 100%);
-     background: linear-gradient(180deg, rgba(4, 29, 47, 1) 0%, rgba(4, 29, 47, 0) 25%, rgba(4, 25, 43, 0) 75%, rgba(4, 25, 43, 1) 100%);
-     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#041d2f", endColorstr="#04192b", GradientType=1);
+     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
+     mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 75%, transparent 100%);
  }
 
  .overlayLeft {
@@ -103,19 +76,10 @@
      rotate: 316deg;
  }
 
- .overlayImage::before {
-     content: "";
-     position: absolute;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     background: rgb(2, 15, 33);
-     background: -moz-linear-gradient(180deg, rgba(2, 15, 33, 1) 0%, rgba(2, 15, 33, 0) 25%, rgba(2, 14, 32, 0) 75%, rgba(2, 14, 32, 1) 100%);
-     background: -webkit-linear-gradient(180deg, rgba(2, 15, 33, 1) 0%, rgba(2, 15, 33, 0) 25%, rgba(2, 14, 32, 0) 75%, rgba(2, 14, 32, 1) 100%);
-     background: linear-gradient(180deg, rgba(2, 15, 33, 1) 0%, rgba(2, 15, 33, 0) 25%, rgba(2, 14, 32, 0) 75%, rgba(2, 14, 32, 1) 100%);
-     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020f21", endColorstr="#020e20", GradientType=1);
- }
+ .photosOverlay{
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+}
 
  .overlayNewsRight {
      z-index: 1;

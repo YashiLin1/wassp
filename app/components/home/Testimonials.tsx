@@ -1,6 +1,7 @@
+//section of testimonials
+
 import React from 'react'
 import { Box, Grid, Typography } from '@mui/material';
-
 
 const Testimonials = () => {
   return (

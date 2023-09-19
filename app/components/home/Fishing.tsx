@@ -1,3 +1,5 @@
+//Section of fishing
+
 import React from 'react';
 import { Box, Grid, Typography, LinearProgress } from '@mui/material';
 import styles from './home.module.css';

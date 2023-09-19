@@ -1,6 +1,8 @@
+//This is the section of the names and logos moving horizentally
 import React from 'react'
 import { Box, Stack, Typography } from '@mui/material';
 import Marquee from "react-fast-marquee";
+// marquee animation from https://github.com/justin-chu/react-fast-marquee
 import styles from './home.module.css';
 
 const items = [
@@ -9,7 +11,7 @@ const items = [
   { name: 'HEMISPHERE', logo: '/Hemisphere.svg' },
 ];
 
-const Scroll = () => {
+const MarqueeLogo = () => {
   return (
     <Box
       sx={{
@@ -63,4 +65,4 @@ const Scroll = () => {
   )
 }
 
-export default Scroll
+export default MarqueeLogo

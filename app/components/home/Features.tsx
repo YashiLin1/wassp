@@ -1,3 +1,5 @@
+//Section of features
+
 import React, { useState } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import TabsGroup from './Features/TabsGroup';
@@ -83,7 +85,7 @@ const Features = () => {
             FEATURES
           </Typography>
         </Grid>
-        <Grid item xs={12} md={8}
+        <Grid item xs={12} md={8} xl={7}
           sx={{
             mb: 2.2,
             pl: {
