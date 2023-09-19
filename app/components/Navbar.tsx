@@ -24,16 +24,22 @@ const Navbar = () => {
             <img src="logo.svg" style={{ width: '100%' }} alt="Logo" />
           </Grid>
           <Grid item>
-            <Stack direction="row" spacing={4}>
-              <Button sx={{textDecoration:'none',p:0}}><Typography variant='h5'>SEARCH</Typography></Button>
-              <Link sx={{textDecoration:'none'}}><Typography variant='h5'>LOGIN</Typography></Link>
-              <Link>
-                <Stack direction="row" spacing={2}>
+            <Stack
+              direction="row"
+              alignItems="center"
+              spacing={4}
+            >
+              <Button sx={{ textDecoration: 'none', p: 0 }}>
+                <Typography variant='h5'>SEARCH</Typography>
+              </Button>
+              <Link sx={{ textDecoration: 'none' }}>
+                <Typography variant='h5'>LOGIN</Typography>
+              </Link>
+              <Link sx={{ textDecoration: 'none' }}>
+                <Stack direction="row" spacing={1} alignItems="center">
                   <Typography variant='h5'>EN</Typography>
                   <img src="ArrowDown.svg" alt="logo" />
-
                 </Stack>
-
               </Link>
             </Stack>
           </Grid>
