@@ -15,11 +15,12 @@ const NavBtn: React.FC<NavBtnProps> = ({ text }) => {
           xs: 3.8,
           md: 4.2,
           lg: 4.6,
-          xl:5,
+          xl: 5,
         },
         py: {
-          xs: 0.3,
+          xs: 0.6,
           lg:1,
+          xl:1.4
         }
       }}>
       <Typography variant="body1">{text}</Typography>

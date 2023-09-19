@@ -15,12 +15,10 @@ import Footer from "@/app/components/Footer";
 import { ThemeProvider } from '@emotion/react';
 import { theme } from '@/app/components/theme';
 import styles from '@/app/components/home/home.module.css';
+import zIndex from '@mui/material/styles/zIndex';
 
 const Page = () => {
-
-  // const buffer = 1;
-
-  // computed values of parallax section starting point, so it's convenient to adjust later
+  // computed values of parallax section starting point
   const start = 0;
   const heroStart = start + 0;
   const welcomeStart = heroStart + 0.95;
@@ -28,20 +26,19 @@ const Page = () => {
   const featuresStart = fishingStart + 0.999;
   const scrollStart = featuresStart + 0.251;
   const footerStart = scrollStart + 1.3;
-  const total = footerStart + 1.4;
+  const total = footerStart + 0.8;
   return (
     <>
-    {/* //ThemeProvider is from Material UI, Parallax is from React-spring */}
       <ThemeProvider theme={theme}>
         <Navbar />
-        <Parallax pages={4.25}>
+        <Parallax pages={total}>
           <ParallaxLayer offset={heroStart} speed={0.04}  >
             <div className={styles.heroBackground}></div>
           </ParallaxLayer>
           <ParallaxLayer offset={heroStart} speed={0.5} >
             <Hero />
           </ParallaxLayer>
-          <ParallaxLayer offset={welcomeStart} speed={1} >
+          <ParallaxLayer offset={welcomeStart} speed={1} style={{ zIndex: '3' }}>
             <Welcome />
           </ParallaxLayer>
           <ParallaxLayer offset={fishingStart} speed={0.8} >
@@ -64,21 +61,20 @@ const Page = () => {
           </ParallaxLayer>
         </Parallax>
       </ThemeProvider>
-
-      {/* <>
-        <ThemeProvider theme={theme}>
+ 
+        {/* <ThemeProvider theme={theme}>
           <Navbar />
           <Hero />
           <Welcome />
           <Fishing />
           <Features />
-          <Scroll />
+          <MarqueeLogo />
           <Testimonials />
           <News />
           <Photos />
           <Footer />
-        </ThemeProvider>
-      </> */}
+        </ThemeProvider> */}
+ 
     </>
   )
 }

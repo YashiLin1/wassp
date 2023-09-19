@@ -28,7 +28,7 @@ const Welcome = () => {
         <Box>
           <Grid container sx={{
             pb: {
-              xs: 2,
+              xs: 3,
               lg: 4,
             }
           }}>
@@ -43,7 +43,7 @@ const Welcome = () => {
             <Grid item md={0} lg={4} ></Grid>
             <Grid item xs={2} md={1} sx={{
               pb: {
-                xs: 4,
+                xs: 3.6,
               }
             }}>
               <Typography variant="h5">

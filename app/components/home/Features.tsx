@@ -85,7 +85,7 @@ const Features = () => {
             FEATURES
           </Typography>
         </Grid>
-        <Grid item xs={12} md={8} xl={7}
+        <Grid item xs={12} md={7} xl={7}
           sx={{
             mb: 2.2,
             pl: {

@@ -3,7 +3,18 @@
 import React from 'react';
 import { Box, Card, CardMedia } from '@mui/material';
 import styles from './home.module.css';
-const photoUrls = ['05.jpg', '06.jpg', '07.jpg', '08.jpg', '09.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg'];
+const photoUrls = [
+  '05.jpg',
+  '06.jpg',
+  '07.jpg',
+  '08.jpg',
+  '09.jpg',
+  '10.jpg',
+  '11.jpg',
+  '12.jpg',
+  '13.jpg',
+  '14.jpg'
+];
 
 const Photos = () => {
   return (
@@ -23,14 +34,14 @@ const Photos = () => {
             width: {
               xs: 100,
               md: 121,
-              lg: 160,
-              xl: 190,
+              lg: 132,
+              xl: 'clamp(9rem, 9.4vw + 0rem, 15rem)',
             },
             height: {
               xs: 100,
-              md: 111,
-              lg: 160,
-              xl: 190,
+              md: 121,
+              lg: 132,
+              xl: 'clamp(9rem, 9.4vw + 0rem, 15rem)',
             }
           }}
         >
@@ -40,7 +51,6 @@ const Photos = () => {
               width: '100%',
               height: '100%',
               position: 'relative',
-              
             }}
             image={photoUrl}
             title={`Photo ${index + 1}`}

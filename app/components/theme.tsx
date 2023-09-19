@@ -15,6 +15,13 @@ const Neue = {
 
 const typoTheme = createTheme();
 
+declare module '@mui/material/styles' {
+  interface BreakpointOverrides {
+    xxl: true;
+  }
+}
+
+
 export const theme = createTheme({
   palette: {
     primary: {
@@ -26,30 +33,30 @@ export const theme = createTheme({
       ...Norwester,
       [typoTheme.breakpoints.up('xs')]: {
         fontSize: '45px',
-        lineHeight: '45px'
+        lineHeight: '54px'
       },
       [typoTheme.breakpoints.up('md')]: {
         fontSize: '60px',
-        lineHeight: '60px'
+        lineHeight: '64px'
       },
       [typoTheme.breakpoints.up('xl')]: {
-        fontSize: '90px',
-        lineHeight: '90px'
+        fontSize: 'clamp(5.625rem, 1.5vw + 4.5rem, 6.875rem);',
+        lineHeight: 'clamp(5.7rem, 1.5vw + 4.5rem, 6.875rem);'
       },
     },
     h2: {
       ...Norwester,
       [typoTheme.breakpoints.up('xs')]: {
-        fontSize: '30px',
-        lineHeight: '30px'
+        fontSize: '32px',
+        lineHeight: '36px'
       },
       [typoTheme.breakpoints.up('md')]: {
         fontSize: '60px',
-        lineHeight: '60px'
+        lineHeight: '64px'
       },
       [typoTheme.breakpoints.up('xl')]: {
-        fontSize: '90px',
-        lineHeight: '90px'
+        fontSize: 'clamp(5.625rem, 1.5vw + 4.5rem, 6.875rem);',
+        lineHeight: 'clamp(5.7rem, 1.5vw + 4.5rem, 6.875rem);'
       },
     },
     h3: {
@@ -75,13 +82,16 @@ export const theme = createTheme({
     h5: {
       ...Norwester,
       [typoTheme.breakpoints.up('xs')]: {
-        fontSize: '12px',
+        fontSize: '14px',
       },
       [typoTheme.breakpoints.up('md')]: {
         fontSize: '14px',
       },
-      [typoTheme.breakpoints.up('xl')]: {
+      [typoTheme.breakpoints.up('lg')]: {
         fontSize: '16px',
+      },
+      [typoTheme.breakpoints.up('xl')]: {
+        fontSize: '20px',
       },
     },
     h6: {
@@ -92,20 +102,26 @@ export const theme = createTheme({
       [typoTheme.breakpoints.up('md')]: {
         fontSize: '12px',
       },
-      [typoTheme.breakpoints.up('xl')]: {
+      [typoTheme.breakpoints.up('lg')]: {
         fontSize: '14px',
+      },
+      [typoTheme.breakpoints.up('xl')]: {
+        fontSize: '18px',
       },
     },
     body1: {
       ...Neue,
       [typoTheme.breakpoints.up('xs')]: {
         fontSize: '14px',
+        lineHeight: '18px'
       },
       [typoTheme.breakpoints.up('md')]: {
         fontSize: '16px',
+        lineHeight: '20px'
       },
       [typoTheme.breakpoints.up('xl')]: {
-        fontSize: '18px',
+        fontSize: '20px',
+        lineHeight: '24px'
       },
     },
     body2: {
@@ -113,11 +129,8 @@ export const theme = createTheme({
       [typoTheme.breakpoints.up('xs')]: {
         fontSize: '16px',
       },
-      [typoTheme.breakpoints.up('md')]: {
-        fontSize: '16px',
-      },
       [typoTheme.breakpoints.up('xl')]: {
-        fontSize: '18px',
+        fontSize: '20px',
       },
       textTransform: 'none'
     },
@@ -132,14 +145,16 @@ export const theme = createTheme({
         lineHeight: '64px'
       },
       [typoTheme.breakpoints.up('xl')]: {
-        fontSize: '72px',
-        lineHeight: '74px'
+        fontSize: 'clamp(5.625rem, 1.5vw + 4.5rem, 6.875rem);',
+        lineHeight: 'clamp(5.625rem, 1.5vw + 4.5rem, 6.875rem);'
       },
+      textTransform: 'none'
     },
     subtitle2: {
       ...Neue,
       fontSize: '1.4rem',
+      textTransform: 'none'
     },
   },
-  
+
 });

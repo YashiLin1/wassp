@@ -6,7 +6,6 @@ import LinkBtnB from './ui/LinkBtnB';
 
 const Footer = () => {
   const buttonText = "Contact";
-  const linkText = "Subscribe to our newsletter";
   return (
     <Box sx={{
       px: {
@@ -22,22 +21,35 @@ const Footer = () => {
         <Grid item xs={11} md={3}>
           <Typography variant='body1'
             sx={{
-              mb: '56px',
+              mb: {
+                xs: 5,
+                md: 7
+              }
             }}>
             Dui duis facilisis id et ullamcorper diam est. Vulputate ac magna in id.</Typography>
           <Box
             sx={{
-              mb: '84px',
+              mb: {
+                xs: 5,
+                md: 7
+              }
             }}
           ><NavBtn text={buttonText}
             />
           </Box>
-          <LinkBtnA text={linkText} />
+          <Box
+            sx={{
+              mb: {
+                xs: 7.6,
+                md:0,
+              }
+            }}
+          >
+            <LinkBtnA text={"Subscribe to our newsletter"} />
+          </Box>
         </Grid>
-
         <Grid item xs={0} md={5}></Grid>
-
-        <Grid item xs={6} md={3}>
+        <Grid item xs={6} md={2}>
           <Box sx={{
             mb: 2
           }}>
@@ -76,13 +88,14 @@ const Footer = () => {
             }}><LinkBtnB text='Youtube' /></Box>
           </Box>
         </Grid>
-        <Grid item xs={6} md={1}>
+        <Grid item xs={6} md={2}>
           <Grid
             container
             direction="column"
             justifyContent="space-between"
+            alignItems="baseline"
             sx={{
-              flexGrow: 1
+              height:'100%'
             }}
           >
             <Grid item sx={{
@@ -109,9 +122,9 @@ const Footer = () => {
           xs: 7,
           md: 12,
         },
-        opacity: '0.04'
+        opacity: '0.9'
       }}>
-        <img src="WasspMultibeam.svg" style={{ width: '100%' }} alt="WasspMultibeam" />
+        <img src="WasspMultibeam_blue.svg" style={{ width: '100%' }} alt="WasspMultibeam" />
       </Box>
     </Box>
   )

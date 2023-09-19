@@ -68,15 +68,28 @@ const News = () => {
                 key={newsItem.id}
                 sx={{
                   display: 'inline-block',
-                  mr: '10px',
-                  maxWidth: 409,
+                  mr: {
+                    xs:'10px',
+                    xl:'18px'
+                  },
+                  width: {
+                    xs:'95%',
+                    md:300,
+                    lg:409,
+                    xl:450,
+                  },
                   backgroundColor: 'transparent',
                   border: '0.1rem solid #ffffff8c',
                 }}
               >
                 <CardMedia
                   sx={{
-                    height: 227,
+                    height: {
+                      xs:155,
+                      md:200,
+                      lg:227,
+                      xl:300,
+                    },
                     m: '20px',
                     mb: '10px',
                     position: 'relative',

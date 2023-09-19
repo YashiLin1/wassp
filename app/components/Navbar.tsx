@@ -1,18 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import { Paper, Grid, Box, Stack, Typography, Link, Button } from '@mui/material';
+import { useSpring, animated } from '@react-spring/web';
 
 const Navbar = () => {
-  return (
+
+
+return (
+  <animated.nav
+    style={{
+
+    }}>
     <Paper elevation={0} sx={{
+      background: 'transparent',
       position: 'fixed',
       top: 0,
       left: 0,
       right: 0,
-      background: 'transparent',
       zIndex: 50,
     }}>
       <Box sx={{
-        p: 5,
+        p: {
+          xs: 2,
+          md: 5
+        },
         flexGrow: 1,
       }}>
         <Grid container
@@ -21,13 +31,20 @@ const Navbar = () => {
           alignItems="center"
         >
           <Grid item>
-            <img src="logo.svg" style={{ width: '100%' }} alt="Logo" />
+            <Box sx={{
+              width: {
+                xs: 103,
+                md: 201,
+              }
+            }}>
+              <img src="logo.svg" style={{ width: '100%' }} alt="Logo" />
+            </Box>
           </Grid>
           <Grid item>
             <Stack
               direction="row"
               alignItems="center"
-              spacing={4}
+              spacing={{ xs: 2, md: 4 }}
             >
               <Button sx={{ textDecoration: 'none', p: 0 }}>
                 <Typography variant='h5'>SEARCH</Typography>
@@ -36,17 +53,32 @@ const Navbar = () => {
                 <Typography variant='h5'>LOGIN</Typography>
               </Link>
               <Link sx={{ textDecoration: 'none' }}>
-                <Stack direction="row" spacing={1} alignItems="center">
+                <Stack direction="row" spacing={1} alignItems="center" sx={{
+                  display: {
+                    xs: 'none',
+                    md: 'flex'
+                  }
+                }}>
                   <Typography variant='h5'>EN</Typography>
-                  <img src="ArrowDown.svg" alt="logo" />
                 </Stack>
               </Link>
+              <Button sx={{
+                p: 0,
+                width: {
+                  xs: 18,
+                  md: 31
+                },
+                minWidth: 0
+              }}>
+                <img src="Menu.svg" alt="menu" />
+              </Button>
             </Stack>
           </Grid>
         </Grid>
       </Box>
     </Paper>
-  )
+  </animated.nav>
+)
 }
 
 export default Navbar

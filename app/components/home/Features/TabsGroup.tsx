@@ -39,8 +39,14 @@ const TabsGroup: React.FC<TabsProps> = ({ TabsNames, onTabClick, selectedTab }) 
             className={`${styles.TabBtn} ${selectedTab && selectedTab.number === Tab.number ? styles.selected : ''
               }`}
             sx={{
-              py: 1,
-              px: 4.4,
+              py: {
+                xs:1,
+                xl:1.2,
+              },
+              px: {
+                xs:4.3,
+                xl:6
+              },
               mb: 1.2,
               mr: 1.4,
             }}
