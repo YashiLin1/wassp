@@ -15,10 +15,6 @@ const Scroll = () => {
       sx={{
         overflow: 'hidden',
         position: 'relative',
-        my: {
-          xs: 15,
-          md: 30,
-        },
       }}>
       <Box
         sx={{

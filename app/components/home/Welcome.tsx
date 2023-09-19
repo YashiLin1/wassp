@@ -10,7 +10,7 @@ const Welcome = () => {
       <Box
         sx={{
           flexGrow: 1,
-          height:'90vh',
+           
           display: 'flex',
           alignItems: 'center',
           px: {
@@ -18,8 +18,8 @@ const Welcome = () => {
             xs: 2
           },
           py:{
-            xs:7.5,
-            md:15
+            xs:30,
+ 
           },
         }} className={styles.welcome}
       >

@@ -28,10 +28,10 @@ const Hero = () => {
                 pt: {
                   xs: 10,
                   sm: 30,
-                  lg: '20vh',
+                  lg: '25vh',
                 }
               }}>
-              <Grid item xs={12} md={9} lg={6} >
+              <Grid item xs={11} md={9} lg={6} >
                 <Typography variant="h4" sx={{
                   fontSize: 'clamp(1rem, 0.8vw + 0.7rem, 2rem)',
                   lineHeight: 'clamp(1.2rem, 0.8vw + 1.3rem, 2.3rem)',

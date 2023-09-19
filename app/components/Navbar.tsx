@@ -1,6 +1,5 @@
 import React from 'react'
-import { Paper, Grid, Box, Stack, Typography, Link } from '@mui/material';
-
+import { Paper, Grid, Box, Stack, Typography, Link, Button } from '@mui/material';
 
 const Navbar = () => {
   return (
@@ -26,8 +25,8 @@ const Navbar = () => {
           </Grid>
           <Grid item>
             <Stack direction="row" spacing={4}>
-              <Link><Typography variant='h5'>SEARCH</Typography></Link>
-              <Link><Typography variant='h5'>LOGIN</Typography></Link>
+              <Button sx={{textDecoration:'none',p:0}}><Typography variant='h5'>SEARCH</Typography></Button>
+              <Link sx={{textDecoration:'none'}}><Typography variant='h5'>LOGIN</Typography></Link>
               <Link>
                 <Stack direction="row" spacing={2}>
                   <Typography variant='h5'>EN</Typography>

@@ -8,7 +8,7 @@ interface LinkBtnProps {
 
 const LinkBtnA: React.FC<LinkBtnProps> = ({ text }) => {
     return (
-        <Link href="#" className={styles.LinkBtn}>
+        <Link href="#" className={styles.LinkBtnA}>
             <Typography variant="body1">{text}</Typography>
         </Link>
     )

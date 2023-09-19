@@ -8,25 +8,27 @@ const Photos = () => {
     <Box sx={{
       whiteSpace: 'nowrap',
       overflow: 'hidden',
-      position:'relative'
+      position: 'relative'
     }}>
       {photoUrls.map((photoUrl, index) => (
         <Card
           key={index}
           sx={{
-            backgroundColor:'transparent',
-            border:'none',
+            backgroundColor: 'transparent',
+            border: 'none',
             display: 'inline-block',
             mr: 2,
             width: {
               xs: 100,
               md: 121,
-              xl: 220,
+              lg: 160,
+              xl: 190,
             },
             height: {
               xs: 100,
               md: 111,
-              xl: 210,
+              lg: 160,
+              xl: 190,
             }
           }}
         >
@@ -36,7 +38,7 @@ const Photos = () => {
               width: '100%',
               height: '100%',
               position: 'relative',
- 
+              
             }}
             image={photoUrl}
             title={`Photo ${index + 1}`}

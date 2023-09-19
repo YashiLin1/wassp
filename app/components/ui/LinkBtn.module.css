@@ -1,15 +1,15 @@
-.LinkBtn {
+.LinkBtnA {
     color: white;
     position: relative;
     text-decoration: none;
     display: inline;
 }
 
-.LinkBtn>*, .LinkBtnB>* {
+.LinkBtnA>*, .LinkBtnB>* {
     display: inline;
 }
 
-.LinkBtn:after {
+.LinkBtnA:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -22,7 +22,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.LinkBtn:hover:after {
+.LinkBtnA:hover:after {
     visibility: hidden;
     width: 0;
 }

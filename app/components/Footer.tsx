@@ -22,7 +22,7 @@ const Footer = () => {
       <Grid container>
 
         <Grid item xs={11} md={3}
-           >
+        >
           <Typography variant='body1'
             sx={{
               mb: '56px',
@@ -93,22 +93,24 @@ const Footer = () => {
             }}>
               <Box sx={{
                 mb: '2px'
-              }}><LinkBtnB text='Facebook' /></Box>
+              }}><LinkBtnB text='Offices' /></Box>
               <Box sx={{
                 mb: '2px'
-              }}><LinkBtnB text='Instagram' /></Box>
+              }}><LinkBtnB text='Auckland - NZ' /></Box>
               <Box sx={{
                 mb: '2px'
-              }}><LinkBtnB text='Youtube' /></Box>
+              }}><LinkBtnB text='Essex - UK' /></Box>
             </Grid>
-            <Grid item><LinkBtnB text='©2023 WASSP' /></Grid>
+            <Grid item>
+              <LinkBtnB text='©2023 WASSP' />
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
       <Box sx={{
-        py:{
-          xs:3.5,
-          md:7.5,
+        py: {
+          xs: 7,
+          md: 12,
         },
         opacity: '0.04'
       }}>
