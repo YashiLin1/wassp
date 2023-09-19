@@ -35,7 +35,7 @@ const Fishing = () => {
       },
 
     }} className={styles.section} >
-      {/* <div className={styles.overlayFishing}></div> */}
+      {/* <div className={styles.fishingBackground}></div> */}
       <Grid container
         justifyContent="space-between"
         sx={{

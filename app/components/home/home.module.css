@@ -42,7 +42,7 @@
  }
 
 
- .overlayFishing {
+ .fishingBackground {
      background-image: url(/02.jpg);
      background-size: cover;
      background-position: center;
@@ -54,7 +54,7 @@
      left: 0;
  }
 
- .overlayFishing:before {
+ .fishingBackground:before {
      z-index: 1;
      content: "";
      position: absolute;

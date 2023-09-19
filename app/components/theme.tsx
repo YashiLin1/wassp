@@ -1,3 +1,5 @@
+
+// Theme configuration using Material UI
 import { createTheme } from '@mui/material';
 
 const Norwester = {
