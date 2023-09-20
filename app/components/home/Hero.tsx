@@ -4,6 +4,7 @@ import React from 'react'
 import { Box, Grid, Typography } from '@mui/material';
 import NavBtn from '../ui/NavBtn';
 import styles from './home.module.css';
+import FadeIn from '../animation/FadeIn';
 
 const Hero = () => {
   const buttonText = "Contact Us";
@@ -34,15 +35,15 @@ const Hero = () => {
             }
           }}>
           <Grid item xs={11} md={9} lg={6} >
-            <Typography variant="h5" 
-            sx={{
-              fontSize: {
-                xs: '16px',
-                md: '24px',
-                xl: '36px'
-              },
-              mb:1
-            }}>
+            <Typography variant="h5"
+              sx={{
+                fontSize: {
+                  xs: '16px',
+                  md: '24px',
+                  xl: '36px'
+                },
+                mb: 1
+              }}>
               SEA IT ALL
             </Typography>
             <Typography variant="h1" sx={{
@@ -58,7 +59,7 @@ const Hero = () => {
             pb: {
               xs: 6,
               lg: 10,
-              xl:12
+              xl: 12
             }
           }}>
           <Grid item md={0} lg={4} xl={4}></Grid>
@@ -69,10 +70,12 @@ const Hero = () => {
                 lg: 0,
               }
             }}>
-            <Typography variant="body1" sx={{
-            }}>
-              WASSP multi-beam enables sustainable fishing, exploration, and surveys with versatility and detail.
-            </Typography>
+            <FadeIn>
+              <Typography variant="body1" sx={{
+              }}>
+                WASSP multi-beam enables sustainable fishing, exploration, and surveys with versatility and detail.
+              </Typography>
+            </FadeIn>
           </Grid>
           <Grid item xs={0} md={0} lg={4}></Grid>
           <Grid item xs={12} lg={2} sx={{

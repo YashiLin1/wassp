@@ -3,7 +3,8 @@
 import React from 'react';
 import { Box, Grid, Typography, LinearProgress } from '@mui/material';
 import styles from './home.module.css';
-import LinkBtn from '../ui/LinkBtnA';
+import LinkBtnA from '../ui/LinkBtnA';
+import FadeIn from '../animation/FadeIn';
 
 
 const Fishing = () => {
@@ -29,7 +30,7 @@ const Fishing = () => {
   return (
     <Box sx={{
       flexGrow: 1,
- 
+
       height: '100vh',
       px: {
         xs: 2,
@@ -82,20 +83,22 @@ const Fishing = () => {
           <Typography variant="h3">f - series</Typography>
         </Grid>
         <Grid item xs={11} lg={3} >
-          <Typography variant="body1" sx={{
-            pb: 2
-          }}>
-            F - SERIES
-          </Typography>
-          <Typography variant="body1" sx={{
-            pb: {
-              xs: 3,
-              md: 3.8,
-            }
-          }}>
-            WASSP Multibeam finds fish and habitat over a wider area than single-beam systems.
-          </Typography>
-          <LinkBtn text={linkText} />
+          <FadeIn>
+            <Typography variant="body1" sx={{
+              pb: 2
+            }}>
+              F - SERIES
+            </Typography>
+            <Typography variant="body1" sx={{
+              pb: {
+                xs: 3,
+                md: 3.8,
+              }
+            }}>
+              WASSP Multibeam finds fish and habitat over a wider area than single-beam systems.
+            </Typography>
+            <LinkBtnA text={linkText} url={'#'} />
+          </FadeIn>
         </Grid>
       </Grid>
     </Box >
