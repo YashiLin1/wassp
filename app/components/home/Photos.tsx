@@ -21,7 +21,7 @@ const Photos = () => {
     <Box sx={{
       whiteSpace: 'nowrap',
       overflow: 'hidden',
-      position: 'relative'
+      position: 'relative' 
     }}>
       {photoUrls.map((photoUrl, index) => (
         <Card
@@ -33,14 +33,14 @@ const Photos = () => {
             mr: 2,
             width: {
               xs: 100,
-              md: 121,
-              lg: 132,
+              md: 111,
+              lg: 123,
               xl: 'clamp(9rem, 9.4vw + 0rem, 15rem)',
             },
             height: {
               xs: 100,
-              md: 121,
-              lg: 132,
+              md: 111,
+              lg: 123,
               xl: 'clamp(9rem, 9.4vw + 0rem, 15rem)',
             }
           }}

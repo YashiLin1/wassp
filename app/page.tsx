@@ -15,18 +15,20 @@ import Footer from "@/app/components/Footer";
 import { ThemeProvider } from '@emotion/react';
 import { theme } from '@/app/components/theme';
 import styles from '@/app/components/home/home.module.css';
-import zIndex from '@mui/material/styles/zIndex';
+import MovingBackground from '@/app/components/background/MovingBackground';
+import {
+  heroStart,
+  welcomeStart,
+  fishingStart,
+  featuresStart,
+  marqueeStart,
+  testimonialsStart,
+  footerStart,
+  total,
+} from '@/app/components/animation/parallax';
 
 const Page = () => {
-  // computed values of parallax section starting point
-  const start = 0;
-  const heroStart = start + 0;
-  const welcomeStart = heroStart + 0.95;
-  const fishingStart = welcomeStart + 0.05;
-  const featuresStart = fishingStart + 0.999;
-  const scrollStart = featuresStart + 0.251;
-  const footerStart = scrollStart + 1.2;
-  const total = footerStart + 0.8;
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -47,11 +49,16 @@ const Page = () => {
           <ParallaxLayer offset={fishingStart} speed={1.2} >
             <Fishing />
           </ParallaxLayer>
-          <ParallaxLayer offset={featuresStart} speed={1} factor={0.5}>
+          <ParallaxLayer offset={featuresStart} speed={1} factor={0.8}>
             <Features />
           </ParallaxLayer>
-          <ParallaxLayer offset={scrollStart} speed={1} >
+          <ParallaxLayer offset={marqueeStart} sticky={{ start: marqueeStart, end: footerStart }}>
+            <MovingBackground />
+          </ParallaxLayer>
+          <ParallaxLayer offset={marqueeStart} speed={1} factor={0.2}>
             <MarqueeLogo />
+          </ParallaxLayer>
+          <ParallaxLayer offset={testimonialsStart} speed={1} >
             <Testimonials />
             <News />
             <Photos />
@@ -61,20 +68,7 @@ const Page = () => {
           </ParallaxLayer>
         </Parallax>
       </ThemeProvider>
- 
-        {/* <ThemeProvider theme={theme}>
-          <Navbar />
-          <Hero />
-          <Welcome />
-          <Fishing />
-          <Features />
-          <MarqueeLogo />
-          <Testimonials />
-          <News />
-          <Photos />
-          <Footer />
-        </ThemeProvider> */}
- 
+
     </>
   )
 }

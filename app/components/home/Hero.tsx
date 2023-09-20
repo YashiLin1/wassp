@@ -4,10 +4,13 @@ import React from 'react'
 import { Box, Grid, Typography } from '@mui/material';
 import NavBtn from '../ui/NavBtn';
 import styles from './home.module.css';
-import FadeIn from '../animation/FadeIn';
+import FadeInUp from '../animation/FadeInUp';
+import { useInView } from '@react-spring/web';
 
 const Hero = () => {
   const buttonText = "Contact Us";
+  const [ref, inView] = useInView();
+
   return (
     <Box className={styles.section}
       sx={{
@@ -52,7 +55,7 @@ const Hero = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid container alignItems="flex-end"
+        <Grid container alignItems="flex-end" ref={ref}
           sx={{
             zIndex: 2,
             position: 'relative',
@@ -63,25 +66,26 @@ const Hero = () => {
             }
           }}>
           <Grid item md={0} lg={4} xl={4}></Grid>
-          <Grid item xs={8} md={7} lg={2} xl={2}
+          <Grid item xs={8} md={7} lg={2} xl={2} 
             sx={{
               pb: {
                 xs: 4,
                 lg: 0,
               }
             }}>
-            <FadeIn>
+            <FadeInUp isVisible={inView} delay={100}>
               <Typography variant="body1" sx={{
               }}>
                 WASSP multi-beam enables sustainable fishing, exploration, and surveys with versatility and detail.
               </Typography>
-            </FadeIn>
+            </FadeInUp>
           </Grid>
           <Grid item xs={0} md={0} lg={4}></Grid>
           <Grid item xs={12} lg={2} sx={{
             justifyItems: "end"
           }}>
-            <NavBtn text={buttonText} />
+            <FadeInUp isVisible={inView} delay={300}><NavBtn text={buttonText} /></FadeInUp>
+            
           </Grid>
         </Grid>
       </Grid>

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import TabsGroup from './Features/TabsGroup';
 import TabsContent from './Features/TabsContent';
-
+ 
 const Features = () => {
   const tabs = [
     {
@@ -50,10 +50,14 @@ const Features = () => {
   ];
 
   let [selectedTab, setSelectedTab] = useState<TabsGroup | null>(tabs[0] || null);
+  const [isVisible, setIsVisible] = useState<boolean>(true);
   const handleTabClick = (tab: TabsGroup) => {
-    setSelectedTab(tab);
+    setIsVisible(false); 
+    setTimeout(() => {
+      setSelectedTab(tab);
+      setIsVisible(true);  
+    }, 300);  
   };
-
   return (
     <Box
       sx={{
@@ -111,7 +115,8 @@ const Features = () => {
               md: 4,
             },
           }}>
-          <TabsContent selectedTab={selectedTab} />
+ 
+            <TabsContent selectedTab={selectedTab} isVisible={isVisible}/>
         </Grid>
       </Grid>
     </Box>

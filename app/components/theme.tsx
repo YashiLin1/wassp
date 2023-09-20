@@ -87,9 +87,6 @@ export const theme = createTheme({
       [typoTheme.breakpoints.up('md')]: {
         fontSize: '14px',
       },
-      [typoTheme.breakpoints.up('lg')]: {
-        fontSize: '16px',
-      },
       [typoTheme.breakpoints.up('xl')]: {
         fontSize: '20px',
       },
@@ -101,9 +98,6 @@ export const theme = createTheme({
       },
       [typoTheme.breakpoints.up('md')]: {
         fontSize: '12px',
-      },
-      [typoTheme.breakpoints.up('lg')]: {
-        fontSize: '14px',
       },
       [typoTheme.breakpoints.up('xl')]: {
         fontSize: '18px',

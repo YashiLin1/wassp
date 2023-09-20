@@ -29,7 +29,6 @@ const TabsGroup: React.FC<TabsProps> = ({ TabsNames, onTabClick, selectedTab }) 
         xs: 'hidden',
        lg: 'inherit'
       },
- 
       scrollbarWidth:'none'
     }}>
       <div  >

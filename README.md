@@ -1,12 +1,12 @@
-## Progress documentation
+## Progress Documentation
 
 - [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
 
 - Planned website structure based on App Router's file organization
 
-- Imported Material UI to define font style and responsive design with grids
+- Imported Material UI to define font style and code the responsive design using layout of Box, Grid and Stack.
 
-- Imported react-spring/web for parallax layers and animation
+- Imported React-spring/web for parallax layers and write animation.
 
 
 ## Run this project

@@ -1,18 +1,19 @@
 import React from 'react';
 import { animated, useSpring, easings } from '@react-spring/web';
 
-interface FadeInProps {
+interface FadeInUpProps {
   children: React.ReactNode;
   isVisible: boolean; 
   delay: number;
 }
 
-const FadeIn: React.FC<FadeInProps> = ({ children, isVisible , delay }) => {
+const FadeInUp: React.FC<FadeInUpProps> = ({ children, isVisible , delay }) => {
   const springStyles = useSpring({
     opacity: isVisible ? 1 : 0,
+    transform: isVisible ? 'translateY(0px)' : 'translateY(24px)',
     delay: isVisible ? delay : 0,
     config: {
-      duration: 300,
+      duration: 700,
       easing: easings.easeInOutSine,
     },
   });
@@ -24,4 +25,4 @@ const FadeIn: React.FC<FadeInProps> = ({ children, isVisible , delay }) => {
   );
 };
 
-export default FadeIn;
+export default FadeInUp;
