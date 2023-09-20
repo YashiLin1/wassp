@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import TabsGroup from './Features/TabsGroup';
 import TabsContent from './Features/TabsContent';
- 
+import styles from './home.module.css';
+
 const Features = () => {
   const tabs = [
     {
@@ -66,6 +67,7 @@ const Features = () => {
           md: 30,
         },
       }}
+      className={styles.featureBackground}
     >
       <Grid container>
         <Grid item

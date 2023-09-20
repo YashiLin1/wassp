@@ -1,6 +1,6 @@
 ## Progress Documentation
 
-- [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
+- [Next.js](https://nextjs.org/) project bootstrapped with [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
 
 - Planned website structure based on App Router's file organization
 
@@ -11,7 +11,7 @@
 
 ## Run this project
 
-npm run dev
+`npm run dev`
 
 Open [http://localhost:3000](http://localhost:3000) in browser, best results are in 1366x765 and 360x765.
 

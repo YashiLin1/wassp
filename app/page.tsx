@@ -52,7 +52,7 @@ const Page = () => {
           <ParallaxLayer offset={featuresStart} speed={1} factor={0.8}>
             <Features />
           </ParallaxLayer>
-          <ParallaxLayer offset={marqueeStart} sticky={{ start: marqueeStart, end: footerStart }}>
+          <ParallaxLayer offset={marqueeStart} sticky={{ start: marqueeStart, end: footerStart }} style={{zIndex:-1}}>
             <MovingBackground />
           </ParallaxLayer>
           <ParallaxLayer offset={marqueeStart} speed={1} factor={0.2}>

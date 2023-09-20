@@ -43,6 +43,7 @@ const News = () => {
           xs: 15,
           md: 30,
         },
+        zIndex:6,
       }}>
       <Grid
         container
@@ -68,6 +69,7 @@ const News = () => {
               <Card
                 key={newsItem.id}
                 sx={{
+                  zIndex:40,
                   display: 'inline-block',
                   mr: {
                     xs:'10px',

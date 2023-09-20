@@ -17,19 +17,40 @@ const Welcome = () => {
     <section>
       <Box
         sx={{
-          height:'95vh',
+          height:'90vh',
           flexGrow: 1,
           display: 'flex',
           alignItems: 'center',
+          position:'relative',
           px: {
             md: 6,
             xs: 2
           },
           py: {
-            xs: 30,
+            xs: 20,
+            md:30,
           },
         }} className={styles.welcomeBackground}
       >
+        <Box sx={{
+          position:'absolute',
+          top:0,
+          left:0,
+          backgroundImage:`url('/Layers.svg')`,
+          right:0,
+          bottom:0,
+          backgroundRepeat:'no-repeat',
+          backgroundPosition:{
+            xs:'0% 15%',
+            lg:'0% 0%'
+          },
+          backgroundSize:{
+            xs:'120%',
+            lg:'60%',
+          },
+        }}>
+
+        </Box>
         <Box>
           <Grid container sx={{
             pb: {

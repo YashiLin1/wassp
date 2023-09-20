@@ -1,12 +1,26 @@
  
 
  .welcomeBackground{
+    position: relative;
     background: rgb(5,33,51);
-    background: -moz-linear-gradient(180deg, rgba(5,33,51,0) 0%, rgba(5,33,51,1) 10%, rgba(4,30,49,1) 81%, rgba(4,29,48,0) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(5,33,51,0) 0%, rgba(5,33,51,1) 10%, rgba(4,30,49,1) 81%, rgba(4,29,48,0) 100%);
-    background: linear-gradient(180deg, rgba(5,33,51,0) 0%, rgba(5,33,51,1) 10%, rgba(4,30,49,1) 81%, rgba(4,29,48,0) 100%);
+    background: -moz-linear-gradient(180deg, rgba(5,33,51,0) 0%, rgba(5,33,51,1) 25%, rgba(4,30,49,1) 75%, rgba(4,29,48,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(5,33,51,0) 0%, rgba(5,33,51,1) 25%, rgba(4,30,49,1) 75%, rgba(4,29,48,0) 100%);
+    background: linear-gradient(180deg, rgba(5,33,51,0) 0%, rgba(5,33,51,1) 25%, rgba(4,30,49,1) 75%, rgba(4,29,48,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#052133",endColorstr="#041d30",GradientType=1);
  }
+
+ /* .welcomeBackground:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(/Layers.svg);
+    background-position:0% 0%;
+    background-repeat: no-repeat;
+ } */
+
 
  .heroBackground {
      background-image: url(/01.jpg);
@@ -23,6 +37,17 @@
  
  }
  
+ .featureBackground{
+    position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+    background-image: url(/Layers2.svg);
+    background-position:32% 100%;
+    background-repeat: no-repeat;
+ }
+
  .fishingBackground {
      background-image: url(/02.jpg);
      background-size: cover;
