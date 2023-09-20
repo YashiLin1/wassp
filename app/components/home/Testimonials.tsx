@@ -10,14 +10,18 @@ const Testimonials = () => {
         xs: 2,
         md: 4,
       },
-      my: {
+      pb: {
+        xs: 7.5,
+        md: 15,
+      },
+      pt:{
         xs: 15,
         md: 30,
-      },
+      }
     }}>
       <Grid container
         sx={{
- 
+
         }}
       >
         <Grid item xs={2} md={1} sx={{

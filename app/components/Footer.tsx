@@ -1,11 +1,33 @@
 import React from 'react'
-import { Box, Grid, Typography, Card, CardMedia, CardContent, Button } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import NavBtn from './ui/NavBtn';
 import LinkBtnA from './ui/LinkBtnA';
 import LinkBtnB from './ui/LinkBtnB';
 
 const Footer = () => {
   const buttonText = "Contact";
+
+  const pageLinks = [
+    { text: 'Home', url: '/', buttonType: 'LinkBtnA' },
+    { text: 'Products', url: '/products', buttonType: 'LinkBtnB' },
+    { text: 'About ENL', url: '/about', buttonType: 'LinkBtnB' },
+    { text: 'Multibeam Technology', url: '/technology', buttonType: 'LinkBtnB' },
+    { text: 'News', url: '/news', buttonType: 'LinkBtnB' },
+    { text: 'Resources', url: '/resources', buttonType: 'LinkBtnB' },
+    { text: 'Contact', url: '/contact', buttonType: 'LinkBtnB' },
+  ];
+
+  const socialMedia = [
+    { text: 'Facebook', url: 'https://www.facebook.com/' },
+    { text: 'Instagram', url: 'https://www.instagram.com/' },
+    { text: 'Youtube', url: 'https://www.youtube.com/' },
+  ];
+
+  const offices = [
+    { text: 'Auckland - NZ', url: '/auckland' },
+    { text: 'Essex - UK', url: '/essex' },
+  ];
+
   return (
     <Box sx={{
       px: {
@@ -41,11 +63,10 @@ const Footer = () => {
             sx={{
               mb: {
                 xs: 7.6,
-                md:0,
+                md: 0,
               }
-            }}
-          >
-            <LinkBtnA text={"Subscribe to our newsletter"} />
+            }}>
+            <LinkBtnA text={"Subscribe to our newsletter"} url="#" />
           </Box>
         </Grid>
         <Grid item xs={0} md={5}></Grid>
@@ -53,40 +74,35 @@ const Footer = () => {
           <Box sx={{
             mb: 2
           }}>
-            <Box sx={{
-              mb: '2px'
-            }}><LinkBtnA text='Home' /></Box>
+            {pageLinks.map((link, index) => (
+              <Box key={index} sx={{
+                mb: {
+                  xs: .6,
+                  md: .8,
+                }
+              }}>
+                {/* LinkBtnA has an underline, when hover on the underline animate out. */}
+                {/* LinkBtnB has no underline, when hover on the underline animate in  */}
+                {/* Can be useful when in different pages */}
+                {link.buttonType === 'LinkBtnA' ? (
+                  <LinkBtnA text={link.text} url={link.url}/>
+                ) : (
+                  <LinkBtnB text={link.text} url={link.url}/>
+                )}
+              </Box>
+            ))}
+          </Box>
+          {socialMedia.map((link, index) => (
+            <Box key={index} sx={{
+              mb: {
+                xs: .6,
+                md: .8,
+              }
+            }}>
+            <LinkBtnB text={link.text} url={link.url}/>
+            </Box>
+          ))}
 
-            <Box sx={{
-              mb: '2px'
-            }}><LinkBtnB text='Products' /></Box>
-            <Box sx={{
-              mb: '2px'
-            }}><LinkBtnB text='About ENL' /></Box>
-            <Box sx={{
-              mb: '2px'
-            }}><LinkBtnB text='Multibeam Technology' /></Box>
-            <Box sx={{
-              mb: '2px'
-            }}><LinkBtnB text='News' /></Box>
-            <Box sx={{
-              mb: '2px'
-            }}><LinkBtnB text='Resources' /></Box>
-            <Box sx={{
-              mb: '2px'
-            }}><LinkBtnB text='Contact' /></Box>
-          </Box>
-          <Box>
-            <Box sx={{
-              mb: '2px'
-            }}><LinkBtnB text='Facebook' /></Box>
-            <Box sx={{
-              mb: '2px'
-            }}><LinkBtnB text='Instagram' /></Box>
-            <Box sx={{
-              mb: '2px'
-            }}><LinkBtnB text='Youtube' /></Box>
-          </Box>
         </Grid>
         <Grid item xs={6} md={2}>
           <Grid
@@ -95,24 +111,26 @@ const Footer = () => {
             justifyContent="space-between"
             alignItems="baseline"
             sx={{
-              height:'100%'
-            }}
-          >
+              height: '100%'
+            }}>
             <Grid item sx={{
               mb: 2
             }}>
-              <Box sx={{
-                mb: '2px'
-              }}><LinkBtnB text='Offices' /></Box>
-              <Box sx={{
-                mb: '2px'
-              }}><LinkBtnB text='Auckland - NZ' /></Box>
-              <Box sx={{
-                mb: '2px'
-              }}><LinkBtnB text='Essex - UK' /></Box>
+          {offices.map((link, index) => (
+            <Box key={index} sx={{
+              mb: {
+                xs: .6,
+                md: .8,
+              }
+            }}>
+            <LinkBtnB text={link.text} url={link.url}/>
+            </Box>
+          ))}
+
+
             </Grid>
             <Grid item>
-              <LinkBtnB text='©2023 WASSP' />
+              <LinkBtnB text='©2023 WASSP' url="#"/>
             </Grid>
           </Grid>
         </Grid>

@@ -35,19 +35,20 @@ const News = () => {
           xs: 2,
           md: 4,
         },
-        my: {
+        pt: {
+          xs: 7.5,
+          md: 15,
+        },
+        pb: {
           xs: 15,
           md: 30,
         },
-      }}
-
-    >
+      }}>
       <Grid
         container
         sx={{
           position: 'relative',
-        }}
-      >
+        }}>
         <Grid item xs={2} md={1} sx={{ pb: 4 }}>
           <Typography variant="h6">05</Typography>
         </Grid>

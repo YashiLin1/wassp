@@ -25,7 +25,7 @@ const Page = () => {
   const fishingStart = welcomeStart + 0.05;
   const featuresStart = fishingStart + 0.999;
   const scrollStart = featuresStart + 0.251;
-  const footerStart = scrollStart + 1.3;
+  const footerStart = scrollStart + 1.2;
   const total = footerStart + 0.8;
   return (
     <>

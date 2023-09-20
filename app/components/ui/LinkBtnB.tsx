@@ -1,4 +1,6 @@
 // The only difference between LinkBtnA and LinkBtnB is the hover animation
+// LinkBtnA has an underline, when hover on the underline animate out 
+// LinkBtnB has no underline, when hover on the underline animate in
 
 import React from 'react';
 import { Link, Typography } from '@mui/material';
@@ -6,11 +8,12 @@ import styles from './LinkBtn.module.css';
 
 interface LinkBtnProps {
     text: string;
+    url: string;
 }
 
-const LinkBtnB: React.FC<LinkBtnProps> = ({ text }) => {
+const LinkBtnB: React.FC<LinkBtnProps> = ({ text, url }) => {
     return (
-        <Link href="#" className={styles.LinkBtnB}>
+        <Link href={url} className={styles.LinkBtnB}>
             <Typography variant="body1">{text}</Typography>
         </Link>
     )
