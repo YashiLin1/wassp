@@ -4,7 +4,7 @@
 
 - Bootstrapped Next.js project with `create-next-app`, planned website structure based on Next.js App Router's file organization
 
-- Learned and used Material UI and React-spring/web to create the layout of the page, use parallax layers and write animation
+- Learned Material UI and React-spring/web to create the layout of the page, use parallax layers and write animation
 
 - Installed WordPress using [Local](https://localwp.com/), then installed 4 plugins in WordPress: Advanced Custom Fields, WPGraphQL, WPGraphQL for Advanced Custom Field and Duplicator
 
