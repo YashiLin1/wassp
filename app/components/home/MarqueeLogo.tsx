@@ -1,27 +1,28 @@
 //This is the section of the names and logos moving horizentally
-import React from 'react'
-import { Box, Stack, Typography } from '@mui/material';
+import React from "react";
+import { Box, Stack, Typography } from "@mui/material";
 import Marquee from "react-fast-marquee";
 // marquee animation from https://github.com/justin-chu/react-fast-marquee
-import styles from './home.module.css';
+import styles from "./home.module.css";
 
 const items = [
-  { name: 'SBG SYSTEMS', logo: '/SbgSystems.svg' },
-  { name: 'GPA SEABOTS', logo: '/Seabots.svg' },
-  { name: 'HEMISPHERE', logo: '/Hemisphere.svg' },
+  { name: "SBG SYSTEMS", logo: "/SbgSystems.svg" },
+  { name: "GPA SEABOTS", logo: "/Seabots.svg" },
+  { name: "HEMISPHERE", logo: "/Hemisphere.svg" },
 ];
 
 const MarqueeLogo = () => {
   return (
     <Box
       sx={{
-        overflow: 'hidden',
-        position: 'relative',
-      }}>
+        overflow: "hidden",
+        position: "relative",
+      }}
+    >
       <Box
         sx={{
-          borderTop: '0.1rem solid white',
-          borderBottom: '0.1rem solid white',
+          borderTop: "0.1rem solid white",
+          borderBottom: "0.1rem solid white",
           py: {
             xs: 4,
             lg: 4,
@@ -29,14 +30,15 @@ const MarqueeLogo = () => {
         }}
       >
         <Marquee>
-          <Stack direction="row"
+          <Stack
+            direction="row"
             justifyContent="flex-start"
             alignItems="center"
             spacing={4}
             sx={{
-              whiteSpace: 'nowrap',
+              whiteSpace: "nowrap",
               mr: 4,
-              overFlow:'hidden',
+              overFlow: "hidden",
             }}
           >
             {items.map((item, index) => (
@@ -47,22 +49,21 @@ const MarqueeLogo = () => {
                   sx={{
                     py: 1,
                     px: 2,
-                    border: '1px solid white',
-                    borderRadius: '50px',
+                    border: "1px solid white",
+                    borderRadius: "50px",
                   }}
                 >
                   <img src={item.logo} alt={`${item.name} Logo`} />
                 </Box>
               </React.Fragment>
             ))}
-
           </Stack>
         </Marquee>
       </Box>
       <div className={styles.overlayLeft}></div>
       <div className={styles.overlayRight}></div>
     </Box>
-  )
-}
+  );
+};
 
-export default MarqueeLogo
+export default MarqueeLogo;

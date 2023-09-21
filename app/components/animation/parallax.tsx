@@ -1,4 +1,3 @@
-
 // These values only make elements position perfect in 1366x756
 export const start = 0;
 export const heroStart = start + 0;

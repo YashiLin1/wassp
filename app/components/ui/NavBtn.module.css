@@ -16,7 +16,7 @@
 }
 
 .navbtn::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   margin: auto;
@@ -26,23 +26,21 @@
   transition: all 0.5s ease-in-out;
 }
 
-.navbtn .svg{
+.navbtn .svg {
   transition: all 0.5s ease-in-out;
- 
 }
 
 .navbtn:hover::before {
   scale: 3;
 }
 
-.navbtn:hover .svg{
+.navbtn:hover .svg {
   transition: all 0.5s ease-in-out;
   rotate: 45deg;
-  scale: .8;
+  scale: 0.8;
 }
 
 .navbtn:hover {
- 
   scale: 1.1;
   box-shadow: 0 0px 20px #ffffff33;
 }

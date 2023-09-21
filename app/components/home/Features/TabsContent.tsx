@@ -1,17 +1,20 @@
-import React from 'react';
-import { Typography } from '@mui/material';
-import TabsGroup from './TabsGroup';
-import FadeIn from '../../animation/FadeIn';
+import React from "react";
+import { Typography } from "@mui/material";
+import TabsGroup from "./TabsGroup";
+import FadeIn from "../../animation/FadeIn";
 
 interface TabsContentProps {
   selectedTab: TabsGroup | null;
   isVisible: boolean;
 }
 
-const TabsContent: React.FC<TabsContentProps> = ({ selectedTab, isVisible }) => {
+const TabsContent: React.FC<TabsContentProps> = ({
+  selectedTab,
+  isVisible,
+}) => {
   return (
     <>
-       {selectedTab && ( 
+      {selectedTab && (
         <>
           <FadeIn isVisible={isVisible} delay={50}>
             <Typography variant="subtitle2" sx={{ mb: 3 }}>

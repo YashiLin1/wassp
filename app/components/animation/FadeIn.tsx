@@ -1,13 +1,13 @@
-import React from 'react';
-import { animated, useSpring, easings } from '@react-spring/web';
+import React from "react";
+import { animated, useSpring, easings } from "@react-spring/web";
 
 interface FadeInProps {
   children: React.ReactNode;
-  isVisible: boolean; 
+  isVisible: boolean;
   delay: number;
 }
 
-const FadeIn: React.FC<FadeInProps> = ({ children, isVisible , delay }) => {
+const FadeIn: React.FC<FadeInProps> = ({ children, isVisible, delay }) => {
   const springStyles = useSpring({
     opacity: isVisible ? 1 : 0,
     delay: isVisible ? delay : 0,
@@ -17,11 +17,7 @@ const FadeIn: React.FC<FadeInProps> = ({ children, isVisible , delay }) => {
     },
   });
 
-  return (
-    <animated.div style={springStyles}>
-      {children}
-    </animated.div>
-  );
+  return <animated.div style={springStyles}>{children}</animated.div>;
 };
 
 export default FadeIn;

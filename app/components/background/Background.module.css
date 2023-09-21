@@ -1,0 +1,62 @@
+.dot {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: rgb(0, 124, 203);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(0, 124, 203, 0.15) 0%,
+    rgba(0, 124, 203, 0) 48%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(0, 124, 203, 0.15) 0%,
+    rgba(0, 124, 203, 0) 48%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(0, 124, 203, 0.15) 0%,
+    rgba(0, 124, 203, 0) 48%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007ccb",endColorstr="#007ccb",GradientType=1);
+}
+
+.heroBackground {
+  background-image: url(/01.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+}
+
+.fishingBackground {
+  background-image: url(/02.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 25%,
+    black 75%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 15%,
+    black 75%,
+    transparent 100%
+  );
+}

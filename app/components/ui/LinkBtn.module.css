@@ -1,56 +1,53 @@
 .LinkBtnA {
-    color: white;
-    position: relative;
-    text-decoration: none;
-    display: inline;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  display: inline;
 }
 
-.LinkBtnA>*, .LinkBtnB>* {
-    display: inline;
+.LinkBtnA > *,
+.LinkBtnB > * {
+  display: inline;
 }
 
 .LinkBtnA:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(255, 255, 255);
-    transform-origin: center;
-    visibility: visible;
-    transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform-origin: center;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
 }
 
 .LinkBtnA:hover:after {
-    visibility: hidden;
-    width: 0;
+  visibility: hidden;
+  width: 0;
 }
 
 .LinkBtnB {
-    color: white;
-    position: relative;
-    text-decoration: none;
-  
+  color: white;
+  position: relative;
+  text-decoration: none;
 }
- 
 
 .LinkBtnB:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(255, 255, 255);
-    transform-origin: center;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform-origin: center;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .LinkBtnB:hover:after {
-    visibility: visible;
-    width: 100%;
+  visibility: visible;
+  width: 100%;
 }
-
- 
