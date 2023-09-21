@@ -1,4 +1,5 @@
 import React from "react";
+import { ApolloWrapper } from "../lib/apollo-provider";
 
 import "@/app/global.css";
 
@@ -11,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang={"en"}>
       <body>
-        <main>{children}</main>
+      <ApolloWrapper>{children}</ApolloWrapper>
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+
+
 ## What I did in this test...
 
 - Bootstrapped Next.js project with `create-next-app` 
@@ -10,7 +12,15 @@
 
 - Installed WordPress using [Local](https://localwp.com/), then installed 4 plugins in WordPress: Advanced Custom Fields, WPGraphQL, WPGraphQL for Advanced Custom Field and Duplicator
 
-- Created Field Groups and Post Types of "Articles" and "Capabilities" and found out that showing data in posts created in ACF requires an ACF Pro version. Currently it only shows default data in field groups in WPGraphQL schema results.
+- Created Field Groups and Post Types of "Articles" and "Capabilities" and found out that showing data in posts created in ACF requires an paid ACF Pro version. Currently it only shows default data in field groups in WPGraphQL schema results.
+
+## Current result
+
+- Built homepage with animation
+
+- Struggling in getting queries in WpGraphQL
+
+- Learning Apollo Client
 
 ## Run this project
 
@@ -18,6 +28,6 @@
 
 Open [http://localhost:3000](http://localhost:3000) in browser, best results are in 1366x765 and 360x765.
 
-## Website render issues
+## Front-end render issues
 - Best view in 1366x756. Some spacing issue in 360x765. Parallex layers from React-spring cause spacing problems in different viewpoint. 
 - Sometimes the fonts don't render properly but refresh would fix it.
