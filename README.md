@@ -12,7 +12,9 @@
 
 - Installed WordPress using [Local](https://localwp.com/), then installed 4 plugins in WordPress: Advanced Custom Fields, WPGraphQL, WPGraphQL for Advanced Custom Field and Duplicator
 
-- Created Field Groups and Post Types of "Articles" and "Capabilities" and found out that showing data in posts created in ACF requires an paid ACF Pro version. Currently it only shows default data in field groups in WPGraphQL schema results.
+- Created Field Groups and Post Types of "Articles" and "Capabilities" and found out that showing data in posts created in ACF requires an paid ACF Pro version (maybe I'm wrong). Currently it only shows default content in field groups.
+
+![](https://github.com/YashiLin1/wassp/blob/master/docs/wpgraphql.png)
 
 ## Current result
 
@@ -29,5 +31,9 @@
 Open [http://localhost:3000](http://localhost:3000) in browser, best results are in 1366x765 and 360x765.
 
 ## Front-end render issues
-- Best view in 1366x756. Some spacing issue in 360x765. Parallex layers from React-spring cause spacing problems in different viewpoint. 
+- Best view in `1366x756`. Some spacing issue in `360x765`. Parallex layers from React-spring cause spacing problems in different viewpoint. 
 - Sometimes the fonts don't render properly but refresh would fix it.
+
+## Preview
+https://github.com/YashiLin1/wassp/assets/109286730/b165654c-953c-4c5d-b0e5-948c0621d7db
+
