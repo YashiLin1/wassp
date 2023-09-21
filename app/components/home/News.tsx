@@ -1,16 +1,8 @@
-//Section of news
+//Section of Latest News
 
 import React from "react";
 import Image from "next/image";
-import {
-  Box,
-  Grid,
-  Typography,
-  Card,
-  CardMedia,
-  CardContent,
-  Button,
-} from "@mui/material";
+import { Box, Grid, Typography, Card, CardMedia, CardContent, Button } from "@mui/material";
 import styles from "./home.module.css";
 
 const newsData = [
@@ -39,7 +31,7 @@ const News = () => {
     <Box
       sx={{
         pl: {
-          xs: 2,
+          xs: 0,
           md: 4,
         },
         pt: {
@@ -59,7 +51,7 @@ const News = () => {
           position: "relative",
         }}
       >
-        <Grid item xs={2} md={1} sx={{ pb: 4 }}>
+        <Grid item xs={2} md={1} sx={{ pb: 4, pl: { xs: 2, md: 0 } }}>
           <Typography variant="h6">05</Typography>
         </Grid>
         <Grid item xs={6} md={3}>
@@ -80,13 +72,17 @@ const News = () => {
                 sx={{
                   zIndex: 40,
                   display: "inline-block",
+                  mx: {
+                    xs: 2,
+                    md:1,
+                  },
                   mr: {
                     xs: "10px",
                     xl: "18px",
                   },
                   width: {
-                    xs: "95%",
-                    md: 300,
+                    xs: 330,
+                    md: 330,
                     lg: 409,
                     xl: 450,
                   },
@@ -102,14 +98,21 @@ const News = () => {
                       lg: 227,
                       xl: 300,
                     },
-                    m: "20px",
+                    m: "18px",
                     mb: "10px",
                     position: "relative",
                   }}
                   image={newsItem.image}
                   className={styles.photosOverlay}
                 />
-                <CardContent>
+                <CardContent
+                  sx={{
+                    p: {
+                      xs: "18px",
+                      md: "20px",
+                    },
+                  }}
+                >
                   <Typography
                     variant="body2"
                     sx={{
@@ -159,7 +162,15 @@ const News = () => {
               </Card>
             ))}
           </Box>
-          <div className={styles.overlayRight}></div>
+          <Box
+            sx={{
+              display: {
+                xs: "none",
+                md: "block",
+              },
+            }}
+            className={styles.overlayRight}
+          ></Box>
         </Grid>
       </Grid>
     </Box>

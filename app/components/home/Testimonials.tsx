@@ -7,10 +7,6 @@ const Testimonials = () => {
   return (
     <Box
       sx={{
-        px: {
-          xs: 2,
-          md: 4,
-        },
         pb: {
           xs: 7.5,
           md: 15,
@@ -28,6 +24,10 @@ const Testimonials = () => {
           md={1}
           sx={{
             pb: 4,
+            px: {
+              xs: 2,
+              md: 4,
+            },
           }}
         >
           <Typography variant="h6">04</Typography>
@@ -35,7 +35,17 @@ const Testimonials = () => {
         <Grid item xs={6} md={3}>
           <Typography variant="h5">TESTIMONIALS</Typography>
         </Grid>
-        <Grid item xs={12} md={8} sx={{}}>
+        <Grid
+          item
+          xs={12}
+          md={8}
+          sx={{
+            px: {
+              xs: 2,
+              md: 4,
+            },
+          }}
+        >
           <Typography
             variant="h2"
             sx={{
