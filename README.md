@@ -2,13 +2,9 @@
 
 ## What I did in this test...
 
-- Bootstrapped Next.js project with `create-next-app` 
+- Bootstrapped Next.js project with `create-next-app`, planned website structure based on Next.js App Router's file organization
 
-- Planned website structure based on Next.js App Router's file organization
-
-- Learned and used Material UI to create the layout of the page
-
-- Learned and used React-spring/web for parallax layers and write animation.
+- Learned and used Material UI and React-spring/web to create the layout of the page, use parallax layers and write animation
 
 - Installed WordPress using [Local](https://localwp.com/), then installed 4 plugins in WordPress: Advanced Custom Fields, WPGraphQL, WPGraphQL for Advanced Custom Field and Duplicator
 
@@ -16,7 +12,7 @@
 
 ![](https://github.com/YashiLin1/wassp/blob/master/docs/wpgraphql.png)
 
-## Current result
+## Current results
 
 - Built homepage with animation
 
@@ -28,12 +24,17 @@
 
 `npm run dev`
 
-Open [http://localhost:3000](http://localhost:3000) in browser, best results are in 1366x765 and 360x765.
+[http://localhost:3000](http://localhost:3000) Best results are in 1366x765 and 360x765.
 
 ## Front-end render issues
 - Best view in `1366x756`. Some spacing issue in `360x765`. Parallex layers from React-spring cause spacing problems in different viewpoint. 
 - Sometimes the fonts don't render properly but refresh would fix it.
+  
+## WordPress Duplicator backup
+
+[WordPress Duplicator](https://drive.google.com/drive/folders/1cHpDJNh2quB19pYp5W2jKGULXsYzC-4K?usp=sharing)
+I am facing issues so I haven't been able to complete the back-end. But I uploaded the duplicator file to Google Drive anyway.
 
 ## Preview
-https://github.com/YashiLin1/wassp/assets/109286730/b165654c-953c-4c5d-b0e5-948c0621d7db
+https://github.com/YashiLin1/wassp/assets/109286730/8051b3f4-7794-4187-8553-82714cb13e94
 
